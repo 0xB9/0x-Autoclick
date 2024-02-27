@@ -1,6 +1,6 @@
 ﻿namespace Autoclick
 {
-    partial class Form1
+    partial class Autoclick
     {
         /// <summary>
         ///  Required designer variable.
@@ -78,7 +78,7 @@
             label2.TabIndex = 4;
             label2.Text = "Milliseconds";
             // 
-            // Form1
+            // Autoclick
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -88,8 +88,8 @@
             Controls.Add(stopButton);
             Controls.Add(startButton);
             Controls.Add(milliText);
-            Name = "Form1";
-            Text = "Form1";
+            Name = "Autoclick";
+            Text = "Autoclick";
             ResumeLayout(false);
             PerformLayout();
         }

@@ -1,8 +1,8 @@
 namespace Autoclick
 {
-    public partial class Form1 : Form
+    public partial class Autoclick : Form
     {
-        public Form1()
+        public Autoclick()
         {
             InitializeComponent();
         }
