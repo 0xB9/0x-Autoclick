@@ -28,13 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
             milliText = new TextBox();
             startButton = new Button();
             stopButton = new Button();
             label1 = new Label();
             label2 = new Label();
-            milliTimer = new System.Windows.Forms.Timer(components);
             SuspendLayout();
             // 
             // milliText
@@ -106,6 +104,5 @@
         private Button stopButton;
         private Label label1;
         private Label label2;
-        private System.Windows.Forms.Timer milliTimer;
     }
 }
