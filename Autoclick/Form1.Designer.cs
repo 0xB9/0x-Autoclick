@@ -28,19 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            textBox1 = new TextBox();
+            milliText = new TextBox();
             startButton = new Button();
             stopButton = new Button();
             label1 = new Label();
             label2 = new Label();
             SuspendLayout();
             // 
-            // textBox1
+            // milliText
             // 
-            textBox1.Location = new Point(12, 23);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(173, 23);
-            textBox1.TabIndex = 0;
+            milliText.Location = new Point(12, 23);
+            milliText.Name = "milliText";
+            milliText.Size = new Size(173, 23);
+            milliText.TabIndex = 0;
             // 
             // startButton
             // 
@@ -87,7 +87,7 @@
             Controls.Add(label1);
             Controls.Add(stopButton);
             Controls.Add(startButton);
-            Controls.Add(textBox1);
+            Controls.Add(milliText);
             Name = "Form1";
             Text = "Form1";
             ResumeLayout(false);
@@ -96,7 +96,7 @@
 
         #endregion
 
-        private TextBox textBox1;
+        private TextBox milliText;
         private Button startButton;
         private Button stopButton;
         private Label label1;
