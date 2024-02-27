@@ -28,11 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             milliText = new TextBox();
             startButton = new Button();
             stopButton = new Button();
             label1 = new Label();
             label2 = new Label();
+            milliTimer = new System.Windows.Forms.Timer(components);
             SuspendLayout();
             // 
             // milliText
@@ -50,6 +52,7 @@
             startButton.TabIndex = 1;
             startButton.Text = "Start";
             startButton.UseVisualStyleBackColor = true;
+            startButton.Click += startButton_Click;
             // 
             // stopButton
             // 
@@ -59,6 +62,7 @@
             stopButton.TabIndex = 2;
             stopButton.Text = "Stop";
             stopButton.UseVisualStyleBackColor = true;
+            stopButton.Click += stopButton_Click;
             // 
             // label1
             // 
@@ -102,5 +106,6 @@
         private Button stopButton;
         private Label label1;
         private Label label2;
+        private System.Windows.Forms.Timer milliTimer;
     }
 }
