@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             textBox1 = new TextBox();
-            button1 = new Button();
-            button2 = new Button();
+            startButton = new Button();
+            stopButton = new Button();
             label1 = new Label();
             SuspendLayout();
             // 
@@ -41,23 +41,23 @@
             textBox1.Size = new Size(173, 23);
             textBox1.TabIndex = 0;
             // 
-            // button1
+            // startButton
             // 
-            button1.Location = new Point(12, 64);
-            button1.Name = "button1";
-            button1.Size = new Size(173, 23);
-            button1.TabIndex = 1;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
+            startButton.Location = new Point(12, 64);
+            startButton.Name = "startButton";
+            startButton.Size = new Size(173, 30);
+            startButton.TabIndex = 1;
+            startButton.Text = "Start";
+            startButton.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // stopButton
             // 
-            button2.Location = new Point(12, 102);
-            button2.Name = "button2";
-            button2.Size = new Size(173, 23);
-            button2.TabIndex = 2;
-            button2.Text = "button2";
-            button2.UseVisualStyleBackColor = true;
+            stopButton.Location = new Point(12, 102);
+            stopButton.Name = "stopButton";
+            stopButton.Size = new Size(173, 30);
+            stopButton.TabIndex = 2;
+            stopButton.Text = "Stop";
+            stopButton.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
@@ -74,8 +74,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(197, 178);
             Controls.Add(label1);
-            Controls.Add(button2);
-            Controls.Add(button1);
+            Controls.Add(stopButton);
+            Controls.Add(startButton);
             Controls.Add(textBox1);
             Name = "Form1";
             Text = "Form1";
@@ -86,8 +86,8 @@
         #endregion
 
         private TextBox textBox1;
-        private Button button1;
-        private Button button2;
+        private Button startButton;
+        private Button stopButton;
         private Label label1;
     }
 }
