@@ -32,6 +32,7 @@
             startButton = new Button();
             stopButton = new Button();
             label1 = new Label();
+            label2 = new Label();
             SuspendLayout();
             // 
             // textBox1
@@ -68,11 +69,21 @@
             label1.TabIndex = 3;
             label1.Text = "v0.0.1";
             // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(15, 8);
+            label2.Name = "label2";
+            label2.Size = new Size(73, 15);
+            label2.TabIndex = 4;
+            label2.Text = "Milliseconds";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(197, 178);
+            Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(stopButton);
             Controls.Add(startButton);
@@ -89,5 +100,6 @@
         private Button startButton;
         private Button stopButton;
         private Label label1;
+        private Label label2;
     }
 }
