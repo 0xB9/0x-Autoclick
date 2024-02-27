@@ -72,7 +72,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(15, 8);
+            label2.Location = new Point(12, 8);
             label2.Name = "label2";
             label2.Size = new Size(73, 15);
             label2.TabIndex = 4;
@@ -83,12 +83,13 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(197, 178);
+            Controls.Add(milliText);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(stopButton);
             Controls.Add(startButton);
-            Controls.Add(milliText);
             Name = "Autoclick";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Autoclick";
             ResumeLayout(false);
             PerformLayout();
