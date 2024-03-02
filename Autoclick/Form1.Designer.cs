@@ -37,7 +37,7 @@
             // 
             // milliText
             // 
-            milliText.Location = new Point(12, 23);
+            milliText.Location = new Point(12, 50);
             milliText.Name = "milliText";
             milliText.PlaceholderText = "3000";
             milliText.Size = new Size(173, 23);
@@ -46,7 +46,7 @@
             // 
             // startButton
             // 
-            startButton.Location = new Point(12, 64);
+            startButton.Location = new Point(12, 91);
             startButton.Name = "startButton";
             startButton.Size = new Size(173, 30);
             startButton.TabIndex = 1;
@@ -56,7 +56,7 @@
             // 
             // stopButton
             // 
-            stopButton.Location = new Point(12, 102);
+            stopButton.Location = new Point(12, 129);
             stopButton.Name = "stopButton";
             stopButton.Size = new Size(173, 30);
             stopButton.TabIndex = 2;
@@ -76,7 +76,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(12, 8);
+            label2.Location = new Point(12, 35);
             label2.Name = "label2";
             label2.Size = new Size(73, 15);
             label2.TabIndex = 4;
@@ -92,6 +92,7 @@
             Controls.Add(label1);
             Controls.Add(stopButton);
             Controls.Add(startButton);
+            FormBorderStyle = FormBorderStyle.None;
             Name = "Autoclick";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Autoclick";
