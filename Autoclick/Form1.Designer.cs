@@ -67,6 +67,7 @@
             // label1
             // 
             label1.AutoSize = true;
+            label1.ForeColor = Color.White;
             label1.Location = new Point(2, 163);
             label1.Name = "label1";
             label1.Size = new Size(37, 15);
@@ -76,6 +77,7 @@
             // label2
             // 
             label2.AutoSize = true;
+            label2.ForeColor = Color.White;
             label2.Location = new Point(12, 35);
             label2.Name = "label2";
             label2.Size = new Size(73, 15);
@@ -86,6 +88,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(40, 9, 79);
             ClientSize = new Size(197, 178);
             Controls.Add(milliText);
             Controls.Add(label2);
