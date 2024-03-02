@@ -33,6 +33,7 @@
             stopButton = new Button();
             label1 = new Label();
             label2 = new Label();
+            topBorder = new Panel();
             SuspendLayout();
             // 
             // milliText
@@ -84,12 +85,21 @@
             label2.TabIndex = 4;
             label2.Text = "Milliseconds";
             // 
+            // topBorder
+            // 
+            topBorder.BackColor = Color.FromArgb(27, 8, 51);
+            topBorder.Location = new Point(0, 0);
+            topBorder.Name = "topBorder";
+            topBorder.Size = new Size(197, 30);
+            topBorder.TabIndex = 5;
+            // 
             // Autoclick
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(40, 9, 79);
             ClientSize = new Size(197, 178);
+            Controls.Add(topBorder);
             Controls.Add(milliText);
             Controls.Add(label2);
             Controls.Add(label1);
@@ -110,5 +120,6 @@
         private Button stopButton;
         private Label label1;
         private Label label2;
+        private Panel topBorder;
     }
 }
