@@ -120,11 +120,11 @@
             // titleLabel
             // 
             titleLabel.AutoSize = true;
-            titleLabel.Font = new Font("Antraste", 8.999999F, FontStyle.Regular, GraphicsUnit.Point);
+            titleLabel.Font = new Font("Antraste", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             titleLabel.ForeColor = Color.White;
             titleLabel.Location = new Point(3, 6);
             titleLabel.Name = "titleLabel";
-            titleLabel.Size = new Size(87, 15);
+            titleLabel.Size = new Size(96, 17);
             titleLabel.TabIndex = 1;
             titleLabel.Text = "Autoclick";
             // 
