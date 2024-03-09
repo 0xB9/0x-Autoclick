@@ -41,10 +41,15 @@
             // 
             // milliText
             // 
+            milliText.BackColor = Color.FromArgb(66, 16, 130);
+            milliText.BorderStyle = BorderStyle.None;
+            milliText.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            milliText.ForeColor = Color.White;
             milliText.Location = new Point(12, 50);
+            milliText.Multiline = true;
             milliText.Name = "milliText";
             milliText.PlaceholderText = "3000";
-            milliText.Size = new Size(173, 23);
+            milliText.Size = new Size(173, 21);
             milliText.TabIndex = 0;
             milliText.Text = "800";
             // 
@@ -133,6 +138,7 @@
             Controls.Add(versionLabel);
             Controls.Add(stopButton);
             Controls.Add(startButton);
+            ForeColor = Color.Black;
             FormBorderStyle = FormBorderStyle.None;
             Name = "Autoclick";
             StartPosition = FormStartPosition.CenterScreen;
