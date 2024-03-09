@@ -37,6 +37,8 @@
             topBorder = new Panel();
             titleLabel = new Label();
             closeButton = new Button();
+            leftMouseButton = new RadioButton();
+            rightMouseButton = new RadioButton();
             topBorder.SuspendLayout();
             SuspendLayout();
             // 
@@ -61,7 +63,7 @@
             startButton.FlatStyle = FlatStyle.Flat;
             startButton.Font = new Font("Antraste", 8.999999F, FontStyle.Bold, GraphicsUnit.Point);
             startButton.ForeColor = Color.White;
-            startButton.Location = new Point(12, 91);
+            startButton.Location = new Point(12, 105);
             startButton.Name = "startButton";
             startButton.Size = new Size(173, 30);
             startButton.TabIndex = 1;
@@ -76,7 +78,7 @@
             stopButton.FlatStyle = FlatStyle.Flat;
             stopButton.Font = new Font("Antraste", 8.999999F, FontStyle.Bold, GraphicsUnit.Point);
             stopButton.ForeColor = Color.White;
-            stopButton.Location = new Point(12, 129);
+            stopButton.Location = new Point(12, 143);
             stopButton.Name = "stopButton";
             stopButton.Size = new Size(173, 30);
             stopButton.TabIndex = 2;
@@ -89,7 +91,7 @@
             versionLabel.AutoSize = true;
             versionLabel.Font = new Font("Agency FB", 6.75F, FontStyle.Regular, GraphicsUnit.Point);
             versionLabel.ForeColor = Color.White;
-            versionLabel.Location = new Point(2, 163);
+            versionLabel.Location = new Point(2, 184);
             versionLabel.Name = "versionLabel";
             versionLabel.Size = new Size(28, 13);
             versionLabel.TabIndex = 3;
@@ -103,7 +105,7 @@
             millisecondLabel.Location = new Point(12, 35);
             millisecondLabel.Name = "millisecondLabel";
             millisecondLabel.Size = new Size(98, 14);
-            millisecondLabel.TabIndex = 4;
+            millisecondLabel.TabIndex = 1;
             millisecondLabel.Text = "Milliseconds";
             // 
             // topBorder
@@ -115,7 +117,7 @@
             topBorder.Location = new Point(0, 0);
             topBorder.Name = "topBorder";
             topBorder.Size = new Size(197, 30);
-            topBorder.TabIndex = 5;
+            topBorder.TabIndex = 0;
             topBorder.MouseDown += topBorder_MouseDown;
             topBorder.MouseMove += topBorder_MouseMove;
             topBorder.MouseUp += topBorder_MouseUp;
@@ -143,12 +145,42 @@
             closeButton.UseVisualStyleBackColor = true;
             closeButton.Click += closeButton_Click;
             // 
+            // leftMouseButton
+            // 
+            leftMouseButton.AutoSize = true;
+            leftMouseButton.FlatStyle = FlatStyle.Flat;
+            leftMouseButton.Font = new Font("Antraste", 6.75F, FontStyle.Regular, GraphicsUnit.Point);
+            leftMouseButton.ForeColor = Color.White;
+            leftMouseButton.Location = new Point(12, 80);
+            leftMouseButton.Name = "leftMouseButton";
+            leftMouseButton.Size = new Size(83, 16);
+            leftMouseButton.TabIndex = 6;
+            leftMouseButton.TabStop = true;
+            leftMouseButton.Text = "Left Mouse";
+            leftMouseButton.UseVisualStyleBackColor = true;
+            // 
+            // rightMouseButton
+            // 
+            rightMouseButton.AutoSize = true;
+            rightMouseButton.FlatStyle = FlatStyle.Flat;
+            rightMouseButton.Font = new Font("Antraste", 6.75F, FontStyle.Regular, GraphicsUnit.Point);
+            rightMouseButton.ForeColor = Color.White;
+            rightMouseButton.Location = new Point(101, 80);
+            rightMouseButton.Name = "rightMouseButton";
+            rightMouseButton.Size = new Size(88, 16);
+            rightMouseButton.TabIndex = 7;
+            rightMouseButton.TabStop = true;
+            rightMouseButton.Text = "Right Mouse";
+            rightMouseButton.UseVisualStyleBackColor = true;
+            // 
             // Autoclick
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(40, 9, 79);
-            ClientSize = new Size(197, 178);
+            ClientSize = new Size(197, 200);
+            Controls.Add(rightMouseButton);
+            Controls.Add(leftMouseButton);
             Controls.Add(topBorder);
             Controls.Add(milliText);
             Controls.Add(millisecondLabel);
@@ -176,5 +208,7 @@
         private Panel topBorder;
         private Button closeButton;
         private Label titleLabel;
+        private RadioButton leftMouseButton;
+        private RadioButton rightMouseButton;
     }
 }
