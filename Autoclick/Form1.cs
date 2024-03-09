@@ -50,6 +50,7 @@ namespace Autoclick
             mouse_event(MOUSEEVENTF_RIGHTUP, 0, 0, 0, 0);
         }
 
+        // Close application
         private void closeButton_Click(object sender, EventArgs e)
         {
             this.Close();
