@@ -51,8 +51,7 @@
             milliText.Name = "milliText";
             milliText.PlaceholderText = "3000";
             milliText.Size = new Size(173, 21);
-            milliText.TabIndex = 0;
-            milliText.Text = "800";
+            milliText.TabIndex = 2;
             // 
             // startButton
             // 
