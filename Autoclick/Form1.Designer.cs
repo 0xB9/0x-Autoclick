@@ -50,6 +50,11 @@
             // 
             // startButton
             // 
+            startButton.FlatAppearance.BorderColor = Color.FromArgb(27, 8, 51);
+            startButton.FlatAppearance.BorderSize = 2;
+            startButton.FlatStyle = FlatStyle.Flat;
+            startButton.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            startButton.ForeColor = Color.White;
             startButton.Location = new Point(12, 91);
             startButton.Name = "startButton";
             startButton.Size = new Size(173, 30);
@@ -60,6 +65,11 @@
             // 
             // stopButton
             // 
+            stopButton.FlatAppearance.BorderColor = Color.FromArgb(27, 8, 51);
+            stopButton.FlatAppearance.BorderSize = 2;
+            stopButton.FlatStyle = FlatStyle.Flat;
+            stopButton.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            stopButton.ForeColor = Color.White;
             stopButton.Location = new Point(12, 129);
             stopButton.Name = "stopButton";
             stopButton.Size = new Size(173, 30);
