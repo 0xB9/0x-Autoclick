@@ -32,8 +32,8 @@
             milliText = new TextBox();
             startButton = new Button();
             stopButton = new Button();
-            label1 = new Label();
-            label2 = new Label();
+            versionLabel = new Label();
+            millisecondLabel = new Label();
             topBorder = new Panel();
             closeButton = new Button();
             topBorder.SuspendLayout();
@@ -68,26 +68,26 @@
             stopButton.UseVisualStyleBackColor = true;
             stopButton.Click += stopButton_Click;
             // 
-            // label1
+            // versionLabel
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 8F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.ForeColor = Color.White;
-            label1.Location = new Point(2, 164);
-            label1.Name = "label1";
-            label1.Size = new Size(36, 13);
-            label1.TabIndex = 3;
-            label1.Text = "v0.0.1";
+            versionLabel.AutoSize = true;
+            versionLabel.Font = new Font("Segoe UI", 8F, FontStyle.Regular, GraphicsUnit.Point);
+            versionLabel.ForeColor = Color.White;
+            versionLabel.Location = new Point(2, 164);
+            versionLabel.Name = "versionLabel";
+            versionLabel.Size = new Size(36, 13);
+            versionLabel.TabIndex = 3;
+            versionLabel.Text = "v0.0.1";
             // 
-            // label2
+            // millisecondLabel
             // 
-            label2.AutoSize = true;
-            label2.ForeColor = Color.White;
-            label2.Location = new Point(12, 35);
-            label2.Name = "label2";
-            label2.Size = new Size(73, 15);
-            label2.TabIndex = 4;
-            label2.Text = "Milliseconds";
+            millisecondLabel.AutoSize = true;
+            millisecondLabel.ForeColor = Color.White;
+            millisecondLabel.Location = new Point(12, 35);
+            millisecondLabel.Name = "millisecondLabel";
+            millisecondLabel.Size = new Size(73, 15);
+            millisecondLabel.TabIndex = 4;
+            millisecondLabel.Text = "Milliseconds";
             // 
             // topBorder
             // 
@@ -119,8 +119,8 @@
             ClientSize = new Size(197, 178);
             Controls.Add(topBorder);
             Controls.Add(milliText);
-            Controls.Add(label2);
-            Controls.Add(label1);
+            Controls.Add(millisecondLabel);
+            Controls.Add(versionLabel);
             Controls.Add(stopButton);
             Controls.Add(startButton);
             FormBorderStyle = FormBorderStyle.None;
@@ -137,8 +137,8 @@
         private TextBox milliText;
         private Button startButton;
         private Button stopButton;
-        private Label label1;
-        private Label label2;
+        private Label versionLabel;
+        private Label millisecondLabel;
         private Panel topBorder;
         private Button closeButton;
     }
