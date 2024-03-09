@@ -35,6 +35,7 @@
             versionLabel = new Label();
             millisecondLabel = new Label();
             topBorder = new Panel();
+            titleLabel = new Label();
             closeButton = new Button();
             topBorder.SuspendLayout();
             SuspendLayout();
@@ -107,12 +108,24 @@
             // topBorder
             // 
             topBorder.BackColor = Color.FromArgb(27, 8, 51);
+            topBorder.Controls.Add(titleLabel);
             topBorder.Controls.Add(closeButton);
             topBorder.Dock = DockStyle.Top;
             topBorder.Location = new Point(0, 0);
             topBorder.Name = "topBorder";
             topBorder.Size = new Size(197, 30);
             topBorder.TabIndex = 5;
+            // 
+            // titleLabel
+            // 
+            titleLabel.AutoSize = true;
+            titleLabel.Font = new Font("Antraste", 8.999999F, FontStyle.Regular, GraphicsUnit.Point);
+            titleLabel.ForeColor = Color.White;
+            titleLabel.Location = new Point(3, 6);
+            titleLabel.Name = "titleLabel";
+            titleLabel.Size = new Size(87, 15);
+            titleLabel.TabIndex = 1;
+            titleLabel.Text = "Autoclick";
             // 
             // closeButton
             // 
@@ -144,6 +157,7 @@
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Autoclick";
             topBorder.ResumeLayout(false);
+            topBorder.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -157,5 +171,6 @@
         private Label millisecondLabel;
         private Panel topBorder;
         private Button closeButton;
+        private Label titleLabel;
     }
 }
