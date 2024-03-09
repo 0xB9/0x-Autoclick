@@ -52,6 +52,7 @@
             milliText.PlaceholderText = "3000";
             milliText.Size = new Size(173, 21);
             milliText.TabIndex = 2;
+            milliText.KeyPress += milliText_KeyPress;
             // 
             // startButton
             // 

@@ -50,6 +50,15 @@ namespace Autoclick
             mouse_event(MOUSEEVENTF_RIGHTUP, 0, 0, 0, 0);
         }
 
+        // Only allow numbers and backspace
+        private void milliText_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
         // Move application
         private bool mouseDown;
         private Point lastLocation;
