@@ -59,7 +59,7 @@
             startButton.FlatAppearance.BorderColor = Color.FromArgb(27, 8, 51);
             startButton.FlatAppearance.BorderSize = 2;
             startButton.FlatStyle = FlatStyle.Flat;
-            startButton.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            startButton.Font = new Font("Antraste", 8.999999F, FontStyle.Bold, GraphicsUnit.Point);
             startButton.ForeColor = Color.White;
             startButton.Location = new Point(12, 91);
             startButton.Name = "startButton";
@@ -74,7 +74,7 @@
             stopButton.FlatAppearance.BorderColor = Color.FromArgb(27, 8, 51);
             stopButton.FlatAppearance.BorderSize = 2;
             stopButton.FlatStyle = FlatStyle.Flat;
-            stopButton.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            stopButton.Font = new Font("Antraste", 8.999999F, FontStyle.Bold, GraphicsUnit.Point);
             stopButton.ForeColor = Color.White;
             stopButton.Location = new Point(12, 129);
             stopButton.Name = "stopButton";
@@ -87,21 +87,22 @@
             // versionLabel
             // 
             versionLabel.AutoSize = true;
-            versionLabel.Font = new Font("Segoe UI", 8F, FontStyle.Regular, GraphicsUnit.Point);
+            versionLabel.Font = new Font("Agency FB", 6.75F, FontStyle.Regular, GraphicsUnit.Point);
             versionLabel.ForeColor = Color.White;
-            versionLabel.Location = new Point(2, 164);
+            versionLabel.Location = new Point(2, 163);
             versionLabel.Name = "versionLabel";
-            versionLabel.Size = new Size(36, 13);
+            versionLabel.Size = new Size(28, 13);
             versionLabel.TabIndex = 3;
             versionLabel.Text = "v0.0.1";
             // 
             // millisecondLabel
             // 
             millisecondLabel.AutoSize = true;
+            millisecondLabel.Font = new Font("Antraste", 8.25F, FontStyle.Regular, GraphicsUnit.Point);
             millisecondLabel.ForeColor = Color.White;
             millisecondLabel.Location = new Point(12, 35);
             millisecondLabel.Name = "millisecondLabel";
-            millisecondLabel.Size = new Size(73, 15);
+            millisecondLabel.Size = new Size(98, 14);
             millisecondLabel.TabIndex = 4;
             millisecondLabel.Text = "Milliseconds";
             // 
