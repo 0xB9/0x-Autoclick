@@ -116,6 +116,9 @@
             topBorder.Name = "topBorder";
             topBorder.Size = new Size(197, 30);
             topBorder.TabIndex = 5;
+            topBorder.MouseDown += topBorder_MouseDown;
+            topBorder.MouseMove += topBorder_MouseMove;
+            topBorder.MouseUp += topBorder_MouseUp;
             // 
             // titleLabel
             // 
