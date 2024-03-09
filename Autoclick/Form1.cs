@@ -21,12 +21,12 @@ namespace Autoclick
             autoclickTimer.Tick += new EventHandler(AutoClick);
         }
 
+        // Start auto-clicking with the specified delay
         private void startButton_Click(object sender, EventArgs e)
         {
             int delay;
             if (int.TryParse(milliText.Text, out delay))
             {
-                // Start auto-clicking with the specified delay
                 autoclickTimer.Interval = delay;
                 autoclickTimer.Start();
             }
@@ -36,9 +36,9 @@ namespace Autoclick
             }
         }
 
+        // Stop auto-clicking
         private void stopButton_Click(object sender, EventArgs e)
         {
-            // Stop auto-clicking
             autoclickTimer.Stop();
         }
 
