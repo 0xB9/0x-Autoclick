@@ -49,5 +49,10 @@ namespace Autoclick
             // Simulate right mouse button up
             mouse_event(MOUSEEVENTF_RIGHTUP, 0, 0, 0, 0);
         }
+
+        private void closeButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

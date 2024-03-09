@@ -28,12 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Autoclick));
             milliText = new TextBox();
             startButton = new Button();
             stopButton = new Button();
             label1 = new Label();
             label2 = new Label();
             topBorder = new Panel();
+            closeButton = new Button();
+            topBorder.SuspendLayout();
             SuspendLayout();
             // 
             // milliText
@@ -88,10 +91,24 @@
             // topBorder
             // 
             topBorder.BackColor = Color.FromArgb(27, 8, 51);
+            topBorder.Controls.Add(closeButton);
+            topBorder.Dock = DockStyle.Top;
             topBorder.Location = new Point(0, 0);
             topBorder.Name = "topBorder";
             topBorder.Size = new Size(197, 30);
             topBorder.TabIndex = 5;
+            // 
+            // closeButton
+            // 
+            closeButton.FlatAppearance.BorderSize = 0;
+            closeButton.FlatStyle = FlatStyle.Flat;
+            closeButton.Image = (Image)resources.GetObject("closeButton.Image");
+            closeButton.Location = new Point(170, 0);
+            closeButton.Name = "closeButton";
+            closeButton.Size = new Size(26, 30);
+            closeButton.TabIndex = 0;
+            closeButton.UseVisualStyleBackColor = true;
+            closeButton.Click += closeButton_Click;
             // 
             // Autoclick
             // 
@@ -109,6 +126,7 @@
             Name = "Autoclick";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Autoclick";
+            topBorder.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
         }
@@ -121,5 +139,6 @@
         private Label label1;
         private Label label2;
         private Panel topBorder;
+        private Button closeButton;
     }
 }
