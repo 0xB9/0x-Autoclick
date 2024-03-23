@@ -148,6 +148,7 @@
             // leftMouseButton
             // 
             leftMouseButton.AutoSize = true;
+            leftMouseButton.Checked = true;
             leftMouseButton.FlatStyle = FlatStyle.Flat;
             leftMouseButton.Font = new Font("Antraste", 6.75F, FontStyle.Regular, GraphicsUnit.Point);
             leftMouseButton.ForeColor = Color.White;
@@ -169,7 +170,6 @@
             rightMouseButton.Name = "rightMouseButton";
             rightMouseButton.Size = new Size(88, 16);
             rightMouseButton.TabIndex = 7;
-            rightMouseButton.TabStop = true;
             rightMouseButton.Text = "Right Mouse";
             rightMouseButton.UseVisualStyleBackColor = true;
             // 
