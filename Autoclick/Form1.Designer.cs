@@ -93,9 +93,9 @@
             versionLabel.ForeColor = Color.White;
             versionLabel.Location = new Point(2, 184);
             versionLabel.Name = "versionLabel";
-            versionLabel.Size = new Size(28, 13);
+            versionLabel.Size = new Size(29, 13);
             versionLabel.TabIndex = 3;
-            versionLabel.Text = "v0.0.1";
+            versionLabel.Text = "v0.5.0";
             // 
             // millisecondLabel
             // 
