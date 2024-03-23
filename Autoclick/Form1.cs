@@ -59,7 +59,7 @@ namespace Autoclick
                 mouse_event(MOUSEEVENTF_RIGHTDOWN, 0, 0, 0, 0);
                 // Simulate right mouse button up
                 mouse_event(MOUSEEVENTF_RIGHTUP, 0, 0, 0, 0);
-            }        
+            }
         }
 
         // Only allow numbers and backspace
