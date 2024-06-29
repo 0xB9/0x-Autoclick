@@ -189,6 +189,7 @@
             Controls.Add(startButton);
             ForeColor = Color.Black;
             FormBorderStyle = FormBorderStyle.None;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Autoclick";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Autoclick";
