@@ -13,6 +13,18 @@
 "SccProvider" = "8:"
     "Hierarchy"
     {
+        "Entry"
+        {
+        "MsmKey" = "8:_7D62D92BEF314F948EAABA2FDC80DDB0"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_9A321C5A1FD84288A80BAD034703C2A9"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
     }
     "Configurations"
     {
@@ -68,6 +80,26 @@
         }
         "File"
         {
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_7D62D92BEF314F948EAABA2FDC80DDB0"
+            {
+            "SourcePath" = "8:..\\Autoclick\\purple-cursor.ico"
+            "TargetName" = "8:purple-cursor.ico"
+            "Tag" = "8:"
+            "Folder" = "8:_1ED5145498A94A76AFEFCC3EDF97279F"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
         }
         "FileType"
         {
@@ -245,6 +277,20 @@
         }
         "Shortcut"
         {
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_AFDF93A9E0B84423AA3EA82B2B9F213F"
+            {
+            "Name" = "8:Autoclick"
+            "Arguments" = "8:"
+            "Description" = "8:"
+            "ShowCmd" = "3:1"
+            "IconIndex" = "3:0"
+            "Transitive" = "11:FALSE"
+            "Target" = "8:_9A321C5A1FD84288A80BAD034703C2A9"
+            "Folder" = "8:_8230CB75DCCD4AEB94D2AFA5E03208FC"
+            "WorkingFolder" = "8:_1ED5145498A94A76AFEFCC3EDF97279F"
+            "Icon" = "8:_7D62D92BEF314F948EAABA2FDC80DDB0"
+            "Feature" = "8:"
+            }
         }
         "UserInterface"
         {
@@ -644,6 +690,34 @@
         }
         "ProjectOutput"
         {
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_9A321C5A1FD84288A80BAD034703C2A9"
+            {
+            "SourcePath" = "8:..\\Autoclick\\obj\\Debug\\net6.0-windows\\Autoclick.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_1ED5145498A94A76AFEFCC3EDF97279F"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            "ProjectOutputGroupRegister" = "3:1"
+            "OutputConfiguration" = "8:"
+            "OutputGroupCanonicalName" = "8:Built"
+            "OutputProjectGuid" = "8:{FC92AFEE-BD86-4E71-A8D5-A3C968130382}"
+            "ShowKeyOutput" = "11:TRUE"
+                "ExcludeFilters"
+                {
+                }
+            }
         }
     }
 }
