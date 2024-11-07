@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34221.43
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Autoclick", "Autoclick\Autoclick.csproj", "{FC92AFEE-BD86-4E71-A8D5-A3C968130382}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Autoclick", "Autoclick\Autoclick.csproj", "{FC92AFEE-BD86-4E71-A8D5-A3C968130382}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "AutoclickInstaller", "AutoclickInstaller\AutoclickInstaller.vdproj", "{2662C698-7284-4C0D-B97D-B60E9466447A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,8 @@ Global
 		{FC92AFEE-BD86-4E71-A8D5-A3C968130382}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FC92AFEE-BD86-4E71-A8D5-A3C968130382}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FC92AFEE-BD86-4E71-A8D5-A3C968130382}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2662C698-7284-4C0D-B97D-B60E9466447A}.Debug|Any CPU.ActiveCfg = Debug
+		{2662C698-7284-4C0D-B97D-B60E9466447A}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
