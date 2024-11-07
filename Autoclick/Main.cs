@@ -31,10 +31,14 @@ namespace Autoclick
             {
                 autoclickTimer.Interval = delay;
                 autoclickTimer.Start();
+
+                // Hide label after value is added
+                noValueLabel.Visible = false;
             }
             else
             {
-                MessageBox.Show("Please enter a valid delay value.");
+                // Show error label when there is no value
+                noValueLabel.Visible = true;
             }
         }
 

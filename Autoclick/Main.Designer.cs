@@ -39,6 +39,7 @@
             closeButton = new Button();
             leftMouseButton = new RadioButton();
             rightMouseButton = new RadioButton();
+            noValueLabel = new Label();
             topBorder.SuspendLayout();
             SuspendLayout();
             // 
@@ -63,7 +64,7 @@
             startButton.FlatStyle = FlatStyle.Flat;
             startButton.Font = new Font("Antraste", 8.999999F, FontStyle.Bold, GraphicsUnit.Point);
             startButton.ForeColor = Color.White;
-            startButton.Location = new Point(12, 105);
+            startButton.Location = new Point(12, 113);
             startButton.Name = "startButton";
             startButton.Size = new Size(173, 30);
             startButton.TabIndex = 1;
@@ -78,7 +79,7 @@
             stopButton.FlatStyle = FlatStyle.Flat;
             stopButton.Font = new Font("Antraste", 8.999999F, FontStyle.Bold, GraphicsUnit.Point);
             stopButton.ForeColor = Color.White;
-            stopButton.Location = new Point(12, 143);
+            stopButton.Location = new Point(12, 151);
             stopButton.Name = "stopButton";
             stopButton.Size = new Size(173, 30);
             stopButton.TabIndex = 2;
@@ -152,7 +153,7 @@
             leftMouseButton.FlatStyle = FlatStyle.Flat;
             leftMouseButton.Font = new Font("Antraste", 6.75F, FontStyle.Regular, GraphicsUnit.Point);
             leftMouseButton.ForeColor = Color.White;
-            leftMouseButton.Location = new Point(12, 80);
+            leftMouseButton.Location = new Point(12, 88);
             leftMouseButton.Name = "leftMouseButton";
             leftMouseButton.Size = new Size(83, 16);
             leftMouseButton.TabIndex = 6;
@@ -166,12 +167,24 @@
             rightMouseButton.FlatStyle = FlatStyle.Flat;
             rightMouseButton.Font = new Font("Antraste", 6.75F, FontStyle.Regular, GraphicsUnit.Point);
             rightMouseButton.ForeColor = Color.White;
-            rightMouseButton.Location = new Point(101, 80);
+            rightMouseButton.Location = new Point(101, 88);
             rightMouseButton.Name = "rightMouseButton";
             rightMouseButton.Size = new Size(88, 16);
             rightMouseButton.TabIndex = 7;
             rightMouseButton.Text = "Right Mouse";
             rightMouseButton.UseVisualStyleBackColor = true;
+            // 
+            // noValueLabel
+            // 
+            noValueLabel.AutoSize = true;
+            noValueLabel.Font = new Font("Antraste", 8F, FontStyle.Regular, GraphicsUnit.Point);
+            noValueLabel.ForeColor = Color.FromArgb(177, 14, 18);
+            noValueLabel.Location = new Point(13, 72);
+            noValueLabel.Name = "noValueLabel";
+            noValueLabel.Size = new Size(109, 14);
+            noValueLabel.TabIndex = 8;
+            noValueLabel.Text = "Enter a value!";
+            noValueLabel.Visible = false;
             // 
             // Autoclick
             // 
@@ -179,6 +192,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(40, 9, 79);
             ClientSize = new Size(197, 200);
+            Controls.Add(noValueLabel);
             Controls.Add(rightMouseButton);
             Controls.Add(leftMouseButton);
             Controls.Add(topBorder);
@@ -211,5 +225,6 @@
         private Label titleLabel;
         private RadioButton leftMouseButton;
         private RadioButton rightMouseButton;
+        private Label noValueLabel;
     }
 }
