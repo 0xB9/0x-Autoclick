@@ -1,3 +1,5 @@
 .vs
 Autoclick/bin/
 Autoclick/obj/
+AutoclickInstaller/Debug
+AutoclickInstaller/Release
