@@ -40,6 +40,7 @@
             leftMouseButton = new RadioButton();
             rightMouseButton = new RadioButton();
             noValueLabel = new Label();
+            panelSidebar = new Panel();
             topBorder.SuspendLayout();
             SuspendLayout();
             // 
@@ -92,7 +93,7 @@
             versionLabel.AutoSize = true;
             versionLabel.Font = new Font("Agency FB", 6.75F, FontStyle.Regular, GraphicsUnit.Point);
             versionLabel.ForeColor = Color.White;
-            versionLabel.Location = new Point(0, 217);
+            versionLabel.Location = new Point(161, 215);
             versionLabel.Name = "versionLabel";
             versionLabel.Size = new Size(28, 13);
             versionLabel.TabIndex = 3;
@@ -117,7 +118,7 @@
             topBorder.Dock = DockStyle.Top;
             topBorder.Location = new Point(0, 0);
             topBorder.Name = "topBorder";
-            topBorder.Size = new Size(492, 30);
+            topBorder.Size = new Size(490, 30);
             topBorder.TabIndex = 0;
             topBorder.MouseDown += topBorder_MouseDown;
             topBorder.MouseMove += topBorder_MouseMove;
@@ -139,7 +140,7 @@
             closeButton.FlatAppearance.BorderSize = 0;
             closeButton.FlatStyle = FlatStyle.Flat;
             closeButton.Image = (Image)resources.GetObject("closeButton.Image");
-            closeButton.Location = new Point(466, 0);
+            closeButton.Location = new Point(464, 0);
             closeButton.Name = "closeButton";
             closeButton.Size = new Size(26, 30);
             closeButton.TabIndex = 0;
@@ -186,12 +187,22 @@
             noValueLabel.Text = "Enter a value!";
             noValueLabel.Visible = false;
             // 
+            // panelSidebar
+            // 
+            panelSidebar.BackColor = Color.FromArgb(27, 8, 51);
+            panelSidebar.Dock = DockStyle.Left;
+            panelSidebar.Location = new Point(0, 30);
+            panelSidebar.Name = "panelSidebar";
+            panelSidebar.Size = new Size(159, 200);
+            panelSidebar.TabIndex = 9;
+            // 
             // Autoclick
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(40, 9, 79);
-            ClientSize = new Size(492, 233);
+            ClientSize = new Size(490, 230);
+            Controls.Add(panelSidebar);
             Controls.Add(noValueLabel);
             Controls.Add(rightMouseButton);
             Controls.Add(leftMouseButton);
@@ -226,5 +237,6 @@
         private RadioButton leftMouseButton;
         private RadioButton rightMouseButton;
         private Label noValueLabel;
+        private Panel panelSidebar;
     }
 }
