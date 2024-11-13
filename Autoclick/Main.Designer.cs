@@ -49,7 +49,7 @@
             milliText.BorderStyle = BorderStyle.None;
             milliText.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             milliText.ForeColor = Color.White;
-            milliText.Location = new Point(12, 50);
+            milliText.Location = new Point(296, 57);
             milliText.Multiline = true;
             milliText.Name = "milliText";
             milliText.PlaceholderText = "3000";
@@ -64,7 +64,7 @@
             startButton.FlatStyle = FlatStyle.Flat;
             startButton.Font = new Font("Antraste", 8.999999F, FontStyle.Bold, GraphicsUnit.Point);
             startButton.ForeColor = Color.White;
-            startButton.Location = new Point(12, 113);
+            startButton.Location = new Point(296, 120);
             startButton.Name = "startButton";
             startButton.Size = new Size(173, 30);
             startButton.TabIndex = 1;
@@ -79,7 +79,7 @@
             stopButton.FlatStyle = FlatStyle.Flat;
             stopButton.Font = new Font("Antraste", 8.999999F, FontStyle.Bold, GraphicsUnit.Point);
             stopButton.ForeColor = Color.White;
-            stopButton.Location = new Point(12, 151);
+            stopButton.Location = new Point(296, 158);
             stopButton.Name = "stopButton";
             stopButton.Size = new Size(173, 30);
             stopButton.TabIndex = 2;
@@ -92,7 +92,7 @@
             versionLabel.AutoSize = true;
             versionLabel.Font = new Font("Agency FB", 6.75F, FontStyle.Regular, GraphicsUnit.Point);
             versionLabel.ForeColor = Color.White;
-            versionLabel.Location = new Point(2, 184);
+            versionLabel.Location = new Point(0, 217);
             versionLabel.Name = "versionLabel";
             versionLabel.Size = new Size(28, 13);
             versionLabel.TabIndex = 3;
@@ -103,7 +103,7 @@
             millisecondLabel.AutoSize = true;
             millisecondLabel.Font = new Font("Antraste", 8.25F, FontStyle.Regular, GraphicsUnit.Point);
             millisecondLabel.ForeColor = Color.White;
-            millisecondLabel.Location = new Point(12, 35);
+            millisecondLabel.Location = new Point(296, 42);
             millisecondLabel.Name = "millisecondLabel";
             millisecondLabel.Size = new Size(98, 14);
             millisecondLabel.TabIndex = 1;
@@ -117,7 +117,7 @@
             topBorder.Dock = DockStyle.Top;
             topBorder.Location = new Point(0, 0);
             topBorder.Name = "topBorder";
-            topBorder.Size = new Size(197, 30);
+            topBorder.Size = new Size(492, 30);
             topBorder.TabIndex = 0;
             topBorder.MouseDown += topBorder_MouseDown;
             topBorder.MouseMove += topBorder_MouseMove;
@@ -139,7 +139,7 @@
             closeButton.FlatAppearance.BorderSize = 0;
             closeButton.FlatStyle = FlatStyle.Flat;
             closeButton.Image = (Image)resources.GetObject("closeButton.Image");
-            closeButton.Location = new Point(170, 0);
+            closeButton.Location = new Point(466, 0);
             closeButton.Name = "closeButton";
             closeButton.Size = new Size(26, 30);
             closeButton.TabIndex = 0;
@@ -153,7 +153,7 @@
             leftMouseButton.FlatStyle = FlatStyle.Flat;
             leftMouseButton.Font = new Font("Antraste", 6.75F, FontStyle.Regular, GraphicsUnit.Point);
             leftMouseButton.ForeColor = Color.White;
-            leftMouseButton.Location = new Point(12, 88);
+            leftMouseButton.Location = new Point(296, 95);
             leftMouseButton.Name = "leftMouseButton";
             leftMouseButton.Size = new Size(83, 16);
             leftMouseButton.TabIndex = 6;
@@ -167,7 +167,7 @@
             rightMouseButton.FlatStyle = FlatStyle.Flat;
             rightMouseButton.Font = new Font("Antraste", 6.75F, FontStyle.Regular, GraphicsUnit.Point);
             rightMouseButton.ForeColor = Color.White;
-            rightMouseButton.Location = new Point(101, 88);
+            rightMouseButton.Location = new Point(385, 95);
             rightMouseButton.Name = "rightMouseButton";
             rightMouseButton.Size = new Size(88, 16);
             rightMouseButton.TabIndex = 7;
@@ -179,7 +179,7 @@
             noValueLabel.AutoSize = true;
             noValueLabel.Font = new Font("Antraste", 8F, FontStyle.Regular, GraphicsUnit.Point);
             noValueLabel.ForeColor = Color.FromArgb(177, 14, 18);
-            noValueLabel.Location = new Point(13, 72);
+            noValueLabel.Location = new Point(297, 79);
             noValueLabel.Name = "noValueLabel";
             noValueLabel.Size = new Size(109, 14);
             noValueLabel.TabIndex = 8;
@@ -191,7 +191,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(40, 9, 79);
-            ClientSize = new Size(197, 200);
+            ClientSize = new Size(492, 233);
             Controls.Add(noValueLabel);
             Controls.Add(rightMouseButton);
             Controls.Add(leftMouseButton);
