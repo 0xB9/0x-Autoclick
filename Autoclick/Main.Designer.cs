@@ -91,13 +91,13 @@
             // versionLabel
             // 
             versionLabel.AutoSize = true;
-            versionLabel.Font = new Font("Agency FB", 6.75F, FontStyle.Regular, GraphicsUnit.Point);
+            versionLabel.Font = new Font("Century Gothic", 6.75F, FontStyle.Bold, GraphicsUnit.Point);
             versionLabel.ForeColor = Color.White;
             versionLabel.Location = new Point(161, 215);
             versionLabel.Name = "versionLabel";
-            versionLabel.Size = new Size(28, 13);
+            versionLabel.Size = new Size(43, 13);
             versionLabel.TabIndex = 3;
-            versionLabel.Text = "v1.0.0";
+            versionLabel.Text = "v2.0.0-b";
             // 
             // millisecondLabel
             // 
