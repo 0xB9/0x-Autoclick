@@ -29,12 +29,14 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Autoclick));
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             milliText = new TextBox();
             startButton = new Button();
             stopButton = new Button();
@@ -43,13 +45,15 @@
             topBorder = new Panel();
             titleLabel = new Label();
             closeButton = new Button();
-            leftMouseButton = new RadioButton();
-            rightMouseButton = new RadioButton();
             noValueLabel = new Label();
             panelSidebar = new Panel();
             aboutTab = new Guna.UI2.WinForms.Guna2Button();
             guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             homeTab = new Guna.UI2.WinForms.Guna2Button();
+            leftMouseButton = new Guna.UI2.WinForms.Guna2CustomRadioButton();
+            labelLMB = new Label();
+            labelRMB = new Label();
+            rightMouseButton = new Guna.UI2.WinForms.Guna2CustomRadioButton();
             topBorder.SuspendLayout();
             panelSidebar.SuspendLayout();
             SuspendLayout();
@@ -157,34 +161,6 @@
             closeButton.UseVisualStyleBackColor = true;
             closeButton.Click += closeButton_Click;
             // 
-            // leftMouseButton
-            // 
-            leftMouseButton.AutoSize = true;
-            leftMouseButton.Checked = true;
-            leftMouseButton.FlatStyle = FlatStyle.Flat;
-            leftMouseButton.Font = new Font("Century Gothic", 8.25F, FontStyle.Bold, GraphicsUnit.Point);
-            leftMouseButton.ForeColor = Color.White;
-            leftMouseButton.Location = new Point(167, 100);
-            leftMouseButton.Name = "leftMouseButton";
-            leftMouseButton.Size = new Size(81, 19);
-            leftMouseButton.TabIndex = 6;
-            leftMouseButton.TabStop = true;
-            leftMouseButton.Text = "Left Mouse";
-            leftMouseButton.UseVisualStyleBackColor = true;
-            // 
-            // rightMouseButton
-            // 
-            rightMouseButton.AutoSize = true;
-            rightMouseButton.FlatStyle = FlatStyle.Flat;
-            rightMouseButton.Font = new Font("Century Gothic", 8.25F, FontStyle.Bold, GraphicsUnit.Point);
-            rightMouseButton.ForeColor = Color.White;
-            rightMouseButton.Location = new Point(256, 100);
-            rightMouseButton.Name = "rightMouseButton";
-            rightMouseButton.Size = new Size(90, 19);
-            rightMouseButton.TabIndex = 7;
-            rightMouseButton.Text = "Right Mouse";
-            rightMouseButton.UseVisualStyleBackColor = true;
-            // 
             // noValueLabel
             // 
             noValueLabel.AutoSize = true;
@@ -215,7 +191,7 @@
             aboutTab.CheckedState.CustomBorderColor = Color.FromArgb(66, 16, 130);
             aboutTab.CheckedState.FillColor = Color.FromArgb(40, 9, 79);
             aboutTab.CustomBorderThickness = new Padding(8, 0, 0, 0);
-            aboutTab.CustomizableEdges = customizableEdges7;
+            aboutTab.CustomizableEdges = customizableEdges9;
             aboutTab.DisabledState.BorderColor = Color.DarkGray;
             aboutTab.DisabledState.CustomBorderColor = Color.DarkGray;
             aboutTab.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -227,7 +203,7 @@
             aboutTab.HoverState.FillColor = Color.FromArgb(40, 9, 79);
             aboutTab.Location = new Point(0, 160);
             aboutTab.Name = "aboutTab";
-            aboutTab.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            aboutTab.ShadowDecoration.CustomizableEdges = customizableEdges10;
             aboutTab.Size = new Size(159, 40);
             aboutTab.TabIndex = 2;
             aboutTab.Text = "About";
@@ -238,7 +214,7 @@
             guna2Button2.CheckedState.CustomBorderColor = Color.FromArgb(66, 16, 130);
             guna2Button2.CheckedState.FillColor = Color.FromArgb(40, 9, 79);
             guna2Button2.CustomBorderThickness = new Padding(8, 0, 0, 0);
-            guna2Button2.CustomizableEdges = customizableEdges9;
+            guna2Button2.CustomizableEdges = customizableEdges11;
             guna2Button2.DisabledState.BorderColor = Color.DarkGray;
             guna2Button2.DisabledState.CustomBorderColor = Color.DarkGray;
             guna2Button2.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -250,7 +226,7 @@
             guna2Button2.HoverState.FillColor = Color.FromArgb(40, 9, 79);
             guna2Button2.Location = new Point(0, 40);
             guna2Button2.Name = "guna2Button2";
-            guna2Button2.ShadowDecoration.CustomizableEdges = customizableEdges10;
+            guna2Button2.ShadowDecoration.CustomizableEdges = customizableEdges12;
             guna2Button2.Size = new Size(159, 40);
             guna2Button2.TabIndex = 1;
             guna2Button2.Text = "Tab 2";
@@ -258,10 +234,11 @@
             // homeTab
             // 
             homeTab.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            homeTab.Checked = true;
             homeTab.CheckedState.CustomBorderColor = Color.FromArgb(66, 16, 130);
             homeTab.CheckedState.FillColor = Color.FromArgb(40, 9, 79);
             homeTab.CustomBorderThickness = new Padding(8, 0, 0, 0);
-            homeTab.CustomizableEdges = customizableEdges11;
+            homeTab.CustomizableEdges = customizableEdges13;
             homeTab.DisabledState.BorderColor = Color.DarkGray;
             homeTab.DisabledState.CustomBorderColor = Color.DarkGray;
             homeTab.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -273,10 +250,66 @@
             homeTab.HoverState.FillColor = Color.FromArgb(40, 9, 79);
             homeTab.Location = new Point(0, 0);
             homeTab.Name = "homeTab";
-            homeTab.ShadowDecoration.CustomizableEdges = customizableEdges12;
+            homeTab.ShadowDecoration.CustomizableEdges = customizableEdges14;
             homeTab.Size = new Size(159, 40);
             homeTab.TabIndex = 0;
             homeTab.Text = "Home";
+            // 
+            // leftMouseButton
+            // 
+            leftMouseButton.CheckedState.BorderColor = Color.FromArgb(66, 16, 130);
+            leftMouseButton.CheckedState.BorderThickness = 0;
+            leftMouseButton.CheckedState.FillColor = Color.FromArgb(96, 32, 176);
+            leftMouseButton.CheckedState.InnerColor = Color.FromArgb(178, 120, 250);
+            leftMouseButton.Location = new Point(165, 101);
+            leftMouseButton.Name = "leftMouseButton";
+            leftMouseButton.ShadowDecoration.CustomizableEdges = customizableEdges15;
+            leftMouseButton.Size = new Size(15, 15);
+            leftMouseButton.TabIndex = 10;
+            leftMouseButton.Text = "Some text";
+            leftMouseButton.UncheckedState.BorderColor = Color.DarkGray;
+            leftMouseButton.UncheckedState.BorderThickness = 1;
+            leftMouseButton.UncheckedState.FillColor = Color.Transparent;
+            leftMouseButton.UncheckedState.InnerColor = Color.Transparent;
+            // 
+            // labelLMB
+            // 
+            labelLMB.AutoSize = true;
+            labelLMB.Font = new Font("Century Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            labelLMB.ForeColor = Color.White;
+            labelLMB.Location = new Point(181, 100);
+            labelLMB.Name = "labelLMB";
+            labelLMB.Size = new Size(68, 16);
+            labelLMB.TabIndex = 11;
+            labelLMB.Text = "Left Mouse";
+            // 
+            // labelRMB
+            // 
+            labelRMB.AutoSize = true;
+            labelRMB.Font = new Font("Century Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            labelRMB.ForeColor = Color.White;
+            labelRMB.Location = new Point(268, 100);
+            labelRMB.Name = "labelRMB";
+            labelRMB.Size = new Size(77, 16);
+            labelRMB.TabIndex = 13;
+            labelRMB.Text = "Right Mouse";
+            // 
+            // rightMouseButton
+            // 
+            rightMouseButton.CheckedState.BorderColor = Color.FromArgb(66, 16, 130);
+            rightMouseButton.CheckedState.BorderThickness = 0;
+            rightMouseButton.CheckedState.FillColor = Color.FromArgb(96, 32, 176);
+            rightMouseButton.CheckedState.InnerColor = Color.FromArgb(178, 120, 250);
+            rightMouseButton.Location = new Point(252, 101);
+            rightMouseButton.Name = "rightMouseButton";
+            rightMouseButton.ShadowDecoration.CustomizableEdges = customizableEdges16;
+            rightMouseButton.Size = new Size(15, 15);
+            rightMouseButton.TabIndex = 12;
+            rightMouseButton.Text = "Some text";
+            rightMouseButton.UncheckedState.BorderColor = Color.DarkGray;
+            rightMouseButton.UncheckedState.BorderThickness = 1;
+            rightMouseButton.UncheckedState.FillColor = Color.Transparent;
+            rightMouseButton.UncheckedState.InnerColor = Color.Transparent;
             // 
             // Autoclick
             // 
@@ -284,10 +317,12 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(40, 9, 79);
             ClientSize = new Size(490, 230);
+            Controls.Add(labelRMB);
+            Controls.Add(rightMouseButton);
+            Controls.Add(labelLMB);
+            Controls.Add(leftMouseButton);
             Controls.Add(panelSidebar);
             Controls.Add(noValueLabel);
-            Controls.Add(rightMouseButton);
-            Controls.Add(leftMouseButton);
             Controls.Add(topBorder);
             Controls.Add(milliText);
             Controls.Add(millisecondLabel);
@@ -317,12 +352,14 @@
         private Panel topBorder;
         private Button closeButton;
         private Label titleLabel;
-        private RadioButton leftMouseButton;
-        private RadioButton rightMouseButton;
         private Label noValueLabel;
         private Panel panelSidebar;
         private Guna.UI2.WinForms.Guna2Button homeTab;
         private Guna.UI2.WinForms.Guna2Button aboutTab;
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
+        private Guna.UI2.WinForms.Guna2CustomRadioButton leftMouseButton;
+        private Label labelLMB;
+        private Label labelRMB;
+        private Guna.UI2.WinForms.Guna2CustomRadioButton rightMouseButton;
     }
 }
