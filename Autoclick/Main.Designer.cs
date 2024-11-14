@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Autoclick));
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges17 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             milliText = new TextBox();
             startButton = new Button();
             stopButton = new Button();
@@ -60,7 +60,7 @@
             milliText.BorderStyle = BorderStyle.None;
             milliText.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             milliText.ForeColor = Color.White;
-            milliText.Location = new Point(296, 57);
+            milliText.Location = new Point(167, 57);
             milliText.Multiline = true;
             milliText.Name = "milliText";
             milliText.PlaceholderText = "3000";
@@ -75,9 +75,9 @@
             startButton.FlatStyle = FlatStyle.Flat;
             startButton.Font = new Font("Century Gothic", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             startButton.ForeColor = Color.White;
-            startButton.Location = new Point(296, 125);
+            startButton.Location = new Point(352, 53);
             startButton.Name = "startButton";
-            startButton.Size = new Size(173, 30);
+            startButton.Size = new Size(129, 30);
             startButton.TabIndex = 1;
             startButton.Text = "START";
             startButton.UseVisualStyleBackColor = true;
@@ -90,9 +90,9 @@
             stopButton.FlatStyle = FlatStyle.Flat;
             stopButton.Font = new Font("Century Gothic", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             stopButton.ForeColor = Color.White;
-            stopButton.Location = new Point(296, 163);
+            stopButton.Location = new Point(352, 91);
             stopButton.Name = "stopButton";
-            stopButton.Size = new Size(173, 30);
+            stopButton.Size = new Size(129, 30);
             stopButton.TabIndex = 2;
             stopButton.Text = "STOP";
             stopButton.UseVisualStyleBackColor = true;
@@ -114,7 +114,7 @@
             millisecondLabel.AutoSize = true;
             millisecondLabel.Font = new Font("Century Gothic", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             millisecondLabel.ForeColor = Color.White;
-            millisecondLabel.Location = new Point(296, 39);
+            millisecondLabel.Location = new Point(167, 39);
             millisecondLabel.Name = "millisecondLabel";
             millisecondLabel.Size = new Size(88, 16);
             millisecondLabel.TabIndex = 1;
@@ -164,7 +164,7 @@
             leftMouseButton.FlatStyle = FlatStyle.Flat;
             leftMouseButton.Font = new Font("Century Gothic", 8.25F, FontStyle.Bold, GraphicsUnit.Point);
             leftMouseButton.ForeColor = Color.White;
-            leftMouseButton.Location = new Point(296, 100);
+            leftMouseButton.Location = new Point(167, 100);
             leftMouseButton.Name = "leftMouseButton";
             leftMouseButton.Size = new Size(81, 19);
             leftMouseButton.TabIndex = 6;
@@ -178,7 +178,7 @@
             rightMouseButton.FlatStyle = FlatStyle.Flat;
             rightMouseButton.Font = new Font("Century Gothic", 8.25F, FontStyle.Bold, GraphicsUnit.Point);
             rightMouseButton.ForeColor = Color.White;
-            rightMouseButton.Location = new Point(385, 100);
+            rightMouseButton.Location = new Point(256, 100);
             rightMouseButton.Name = "rightMouseButton";
             rightMouseButton.Size = new Size(90, 19);
             rightMouseButton.TabIndex = 7;
@@ -190,7 +190,7 @@
             noValueLabel.AutoSize = true;
             noValueLabel.Font = new Font("Century Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point);
             noValueLabel.ForeColor = Color.FromArgb(177, 14, 18);
-            noValueLabel.Location = new Point(297, 80);
+            noValueLabel.Location = new Point(168, 80);
             noValueLabel.Name = "noValueLabel";
             noValueLabel.Size = new Size(85, 16);
             noValueLabel.TabIndex = 8;
@@ -215,7 +215,7 @@
             aboutTab.CheckedState.CustomBorderColor = Color.FromArgb(66, 16, 130);
             aboutTab.CheckedState.FillColor = Color.FromArgb(40, 9, 79);
             aboutTab.CustomBorderThickness = new Padding(8, 0, 0, 0);
-            aboutTab.CustomizableEdges = customizableEdges13;
+            aboutTab.CustomizableEdges = customizableEdges7;
             aboutTab.DisabledState.BorderColor = Color.DarkGray;
             aboutTab.DisabledState.CustomBorderColor = Color.DarkGray;
             aboutTab.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -227,7 +227,7 @@
             aboutTab.HoverState.FillColor = Color.FromArgb(40, 9, 79);
             aboutTab.Location = new Point(0, 160);
             aboutTab.Name = "aboutTab";
-            aboutTab.ShadowDecoration.CustomizableEdges = customizableEdges14;
+            aboutTab.ShadowDecoration.CustomizableEdges = customizableEdges8;
             aboutTab.Size = new Size(159, 40);
             aboutTab.TabIndex = 2;
             aboutTab.Text = "About";
@@ -238,7 +238,7 @@
             guna2Button2.CheckedState.CustomBorderColor = Color.FromArgb(66, 16, 130);
             guna2Button2.CheckedState.FillColor = Color.FromArgb(40, 9, 79);
             guna2Button2.CustomBorderThickness = new Padding(8, 0, 0, 0);
-            guna2Button2.CustomizableEdges = customizableEdges15;
+            guna2Button2.CustomizableEdges = customizableEdges9;
             guna2Button2.DisabledState.BorderColor = Color.DarkGray;
             guna2Button2.DisabledState.CustomBorderColor = Color.DarkGray;
             guna2Button2.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -250,7 +250,7 @@
             guna2Button2.HoverState.FillColor = Color.FromArgb(40, 9, 79);
             guna2Button2.Location = new Point(0, 40);
             guna2Button2.Name = "guna2Button2";
-            guna2Button2.ShadowDecoration.CustomizableEdges = customizableEdges16;
+            guna2Button2.ShadowDecoration.CustomizableEdges = customizableEdges10;
             guna2Button2.Size = new Size(159, 40);
             guna2Button2.TabIndex = 1;
             guna2Button2.Text = "Tab 2";
@@ -261,7 +261,7 @@
             homeTab.CheckedState.CustomBorderColor = Color.FromArgb(66, 16, 130);
             homeTab.CheckedState.FillColor = Color.FromArgb(40, 9, 79);
             homeTab.CustomBorderThickness = new Padding(8, 0, 0, 0);
-            homeTab.CustomizableEdges = customizableEdges17;
+            homeTab.CustomizableEdges = customizableEdges11;
             homeTab.DisabledState.BorderColor = Color.DarkGray;
             homeTab.DisabledState.CustomBorderColor = Color.DarkGray;
             homeTab.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -273,7 +273,7 @@
             homeTab.HoverState.FillColor = Color.FromArgb(40, 9, 79);
             homeTab.Location = new Point(0, 0);
             homeTab.Name = "homeTab";
-            homeTab.ShadowDecoration.CustomizableEdges = customizableEdges18;
+            homeTab.ShadowDecoration.CustomizableEdges = customizableEdges12;
             homeTab.Size = new Size(159, 40);
             homeTab.TabIndex = 0;
             homeTab.Text = "Home";
