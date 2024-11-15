@@ -44,7 +44,15 @@ namespace Autoclick
                 noValueLabel.Visible = true;
             }
         }
-        // Use F7/F8 keys to start/stop
+        // Stop auto-clicking
+        private void stopButton_Click(object sender, EventArgs e)
+        {
+            autoclickTimer.Stop();
+            // Change status
+            homeStatus.ForeColor = Color.FromArgb(177, 14, 18);
+            homeStatus.Text = "STOPPED";
+        }
+        // Use F7/F8 keys to start/stop auto-clicking
         protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
         {
             if (keyData == Keys.F7)
@@ -58,15 +66,6 @@ namespace Autoclick
                 return true;
             }
             return base.ProcessCmdKey(ref msg, keyData);
-        }
-
-        // Stop auto-clicking
-        private void stopButton_Click(object sender, EventArgs e)
-        {
-            autoclickTimer.Stop();
-            // Change status
-            homeStatus.ForeColor = Color.FromArgb(177, 14, 18);
-            homeStatus.Text = "STOPPED";
         }
 
         private void AutoClick(object sender, EventArgs e)
