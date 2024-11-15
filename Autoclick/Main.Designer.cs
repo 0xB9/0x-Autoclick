@@ -85,7 +85,7 @@
             startButton.Name = "startButton";
             startButton.Size = new Size(129, 30);
             startButton.TabIndex = 1;
-            startButton.Text = "START";
+            startButton.Text = "START (F7)";
             startButton.UseVisualStyleBackColor = true;
             startButton.Click += startButton_Click;
             // 
@@ -100,7 +100,7 @@
             stopButton.Name = "stopButton";
             stopButton.Size = new Size(129, 30);
             stopButton.TabIndex = 2;
-            stopButton.Text = "STOP";
+            stopButton.Text = "STOP (F8)";
             stopButton.UseVisualStyleBackColor = true;
             stopButton.Click += stopButton_Click;
             // 
