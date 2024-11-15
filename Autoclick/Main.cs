@@ -34,6 +34,7 @@ namespace Autoclick
 
                 // Hide label after value is added
                 noValueLabel.Visible = false;
+                // Change status
                 homeStatus.ForeColor = Color.FromArgb(13, 92, 25);
                 homeStatus.Text = "RUNNING...";
             }
@@ -48,7 +49,7 @@ namespace Autoclick
         private void stopButton_Click(object sender, EventArgs e)
         {
             autoclickTimer.Stop();
-
+            // Change status
             homeStatus.ForeColor = Color.FromArgb(177, 14, 18);
             homeStatus.Text = "STOPPED";
         }
