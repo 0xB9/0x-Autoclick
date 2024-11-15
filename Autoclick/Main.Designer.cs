@@ -54,6 +54,8 @@
             labelLMB = new Label();
             labelRMB = new Label();
             rightMouseButton = new Guna.UI2.WinForms.Guna2CustomRadioButton();
+            homeStatusLabel = new Label();
+            homeStatus = new Label();
             topBorder.SuspendLayout();
             panelSidebar.SuspendLayout();
             SuspendLayout();
@@ -311,12 +313,36 @@
             rightMouseButton.UncheckedState.FillColor = Color.Transparent;
             rightMouseButton.UncheckedState.InnerColor = Color.Transparent;
             // 
+            // homeStatusLabel
+            // 
+            homeStatusLabel.AutoSize = true;
+            homeStatusLabel.Font = new Font("Century Gothic", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            homeStatusLabel.ForeColor = Color.White;
+            homeStatusLabel.Location = new Point(165, 212);
+            homeStatusLabel.Name = "homeStatusLabel";
+            homeStatusLabel.Size = new Size(55, 16);
+            homeStatusLabel.TabIndex = 14;
+            homeStatusLabel.Text = "STATUS:";
+            // 
+            // homeStatus
+            // 
+            homeStatus.AutoSize = true;
+            homeStatus.Font = new Font("Century Gothic", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            homeStatus.ForeColor = Color.FromArgb(177, 14, 18);
+            homeStatus.Location = new Point(216, 212);
+            homeStatus.Name = "homeStatus";
+            homeStatus.Size = new Size(61, 16);
+            homeStatus.TabIndex = 15;
+            homeStatus.Text = "STOPPED";
+            // 
             // Autoclick
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(40, 9, 79);
             ClientSize = new Size(490, 230);
+            Controls.Add(homeStatusLabel);
+            Controls.Add(homeStatus);
             Controls.Add(labelRMB);
             Controls.Add(rightMouseButton);
             Controls.Add(labelLMB);
@@ -361,5 +387,7 @@
         private Label labelLMB;
         private Label labelRMB;
         private Guna.UI2.WinForms.Guna2CustomRadioButton rightMouseButton;
+        private Label homeStatusLabel;
+        private Label homeStatus;
     }
 }
