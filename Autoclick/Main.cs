@@ -44,6 +44,21 @@ namespace Autoclick
                 noValueLabel.Visible = true;
             }
         }
+        // Use F7/F8 keys to start/stop
+        protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
+        {
+            if (keyData == Keys.F7)
+            {
+                startButton_Click(this, EventArgs.Empty);
+                return true;
+            }
+            else if (keyData == Keys.F8)
+            {
+                stopButton_Click(this, EventArgs.Empty);
+                return true;
+            }
+            return base.ProcessCmdKey(ref msg, keyData);
+        }
 
         // Stop auto-clicking
         private void stopButton_Click(object sender, EventArgs e)
