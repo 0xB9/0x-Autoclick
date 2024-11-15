@@ -23,7 +23,7 @@ namespace Autoclick
             autoclickTimer.Tick += new EventHandler(AutoClick);
         }
 
-        // Start auto-clicking with the specified delay
+        // Start auto-clicking
         private void startButton_Click(object sender, EventArgs e)
         {
             int delay;
