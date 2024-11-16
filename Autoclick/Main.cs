@@ -68,7 +68,7 @@ namespace Autoclick
             return base.ProcessCmdKey(ref msg, keyData);
         }
 
-        private void AutoClick(object sender, EventArgs e)
+        private void AutoClick(object? sender, EventArgs e)
         {
             if (leftMouseButton.Checked)
             {
