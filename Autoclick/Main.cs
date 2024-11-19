@@ -82,16 +82,14 @@ namespace Autoclick
         {
             if (leftMouseButton.Checked)
             {
-                // Simulate left mouse button down
+                // Simulate left mouse clicks
                 mouse_event(MOUSEEVENTF_LEFTDOWN, 0, 0, 0, 0);
-                // Simulate left mouse button up
                 mouse_event(MOUSEEVENTF_LEFTUP, 0, 0, 0, 0);
             }
             else if (rightMouseButton.Checked)
             {
-                // Simulate right mouse button down
+                // Simulate right mouse clicks
                 mouse_event(MOUSEEVENTF_RIGHTDOWN, 0, 0, 0, 0);
-                // Simulate right mouse button up
                 mouse_event(MOUSEEVENTF_RIGHTUP, 0, 0, 0, 0);
             }
         }
