@@ -27,7 +27,7 @@ namespace Autoclick
         private void startButton_Click(object sender, EventArgs e)
         {
             int delay;
-            if (int.TryParse(milliText.Text, out delay))
+            if (int.TryParse(milliText.Text, out delay) && delay > 0)
             {
                 autoclickTimer.Interval = delay;
                 autoclickTimer.Start();
