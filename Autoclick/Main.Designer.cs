@@ -66,7 +66,7 @@
             milliText.BorderStyle = BorderStyle.None;
             milliText.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             milliText.ForeColor = Color.White;
-            milliText.Location = new Point(167, 57);
+            milliText.Location = new Point(167, 61);
             milliText.Multiline = true;
             milliText.Name = "milliText";
             milliText.PlaceholderText = "3000";
@@ -81,7 +81,7 @@
             startButton.FlatStyle = FlatStyle.Flat;
             startButton.Font = new Font("Century Gothic", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             startButton.ForeColor = Color.White;
-            startButton.Location = new Point(352, 53);
+            startButton.Location = new Point(352, 46);
             startButton.Name = "startButton";
             startButton.Size = new Size(129, 30);
             startButton.TabIndex = 1;
@@ -96,7 +96,7 @@
             stopButton.FlatStyle = FlatStyle.Flat;
             stopButton.Font = new Font("Century Gothic", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             stopButton.ForeColor = Color.White;
-            stopButton.Location = new Point(352, 91);
+            stopButton.Location = new Point(352, 84);
             stopButton.Name = "stopButton";
             stopButton.Size = new Size(129, 30);
             stopButton.TabIndex = 2;
@@ -120,7 +120,7 @@
             millisecondLabel.AutoSize = true;
             millisecondLabel.Font = new Font("Century Gothic", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             millisecondLabel.ForeColor = Color.White;
-            millisecondLabel.Location = new Point(167, 39);
+            millisecondLabel.Location = new Point(167, 43);
             millisecondLabel.Name = "millisecondLabel";
             millisecondLabel.Size = new Size(88, 16);
             millisecondLabel.TabIndex = 1;
@@ -168,7 +168,7 @@
             noValueLabel.AutoSize = true;
             noValueLabel.Font = new Font("Century Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point);
             noValueLabel.ForeColor = Color.FromArgb(177, 14, 18);
-            noValueLabel.Location = new Point(168, 80);
+            noValueLabel.Location = new Point(168, 84);
             noValueLabel.Name = "noValueLabel";
             noValueLabel.Size = new Size(169, 16);
             noValueLabel.TabIndex = 8;
@@ -264,7 +264,7 @@
             leftMouseButton.CheckedState.BorderThickness = 0;
             leftMouseButton.CheckedState.FillColor = Color.FromArgb(96, 32, 176);
             leftMouseButton.CheckedState.InnerColor = Color.FromArgb(178, 120, 250);
-            leftMouseButton.Location = new Point(165, 86);
+            leftMouseButton.Location = new Point(165, 90);
             leftMouseButton.Name = "leftMouseButton";
             leftMouseButton.ShadowDecoration.CustomizableEdges = customizableEdges7;
             leftMouseButton.Size = new Size(15, 15);
@@ -280,7 +280,7 @@
             labelLMB.AutoSize = true;
             labelLMB.Font = new Font("Century Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point);
             labelLMB.ForeColor = Color.White;
-            labelLMB.Location = new Point(181, 85);
+            labelLMB.Location = new Point(181, 89);
             labelLMB.Name = "labelLMB";
             labelLMB.Size = new Size(68, 16);
             labelLMB.TabIndex = 11;
@@ -291,7 +291,7 @@
             labelRMB.AutoSize = true;
             labelRMB.Font = new Font("Century Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point);
             labelRMB.ForeColor = Color.White;
-            labelRMB.Location = new Point(268, 85);
+            labelRMB.Location = new Point(268, 89);
             labelRMB.Name = "labelRMB";
             labelRMB.Size = new Size(77, 16);
             labelRMB.TabIndex = 13;
@@ -303,7 +303,7 @@
             rightMouseButton.CheckedState.BorderThickness = 0;
             rightMouseButton.CheckedState.FillColor = Color.FromArgb(96, 32, 176);
             rightMouseButton.CheckedState.InnerColor = Color.FromArgb(178, 120, 250);
-            rightMouseButton.Location = new Point(252, 86);
+            rightMouseButton.Location = new Point(252, 90);
             rightMouseButton.Name = "rightMouseButton";
             rightMouseButton.ShadowDecoration.CustomizableEdges = customizableEdges8;
             rightMouseButton.Size = new Size(15, 15);
