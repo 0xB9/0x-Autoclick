@@ -35,74 +35,18 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            milliText = new TextBox();
-            startButton = new Button();
-            stopButton = new Button();
             versionLabel = new Label();
-            millisecondLabel = new Label();
             topBorder = new Panel();
             titleLabel = new Label();
             closeButton = new Button();
-            noValueLabel = new Label();
             panelSidebar = new Panel();
             aboutTab = new Guna.UI2.WinForms.Guna2Button();
             guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             homeTab = new Guna.UI2.WinForms.Guna2Button();
-            leftMouseButton = new Guna.UI2.WinForms.Guna2CustomRadioButton();
-            labelLMB = new Label();
-            labelRMB = new Label();
-            rightMouseButton = new Guna.UI2.WinForms.Guna2CustomRadioButton();
-            homeStatusLabel = new Label();
-            homeStatus = new Label();
+            mainPanel = new Panel();
             topBorder.SuspendLayout();
             panelSidebar.SuspendLayout();
             SuspendLayout();
-            // 
-            // milliText
-            // 
-            milliText.BackColor = Color.FromArgb(66, 16, 130);
-            milliText.BorderStyle = BorderStyle.None;
-            milliText.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            milliText.ForeColor = Color.White;
-            milliText.Location = new Point(167, 61);
-            milliText.Multiline = true;
-            milliText.Name = "milliText";
-            milliText.PlaceholderText = "3000";
-            milliText.Size = new Size(173, 21);
-            milliText.TabIndex = 2;
-            milliText.KeyPress += milliText_KeyPress;
-            // 
-            // startButton
-            // 
-            startButton.FlatAppearance.BorderColor = Color.FromArgb(27, 8, 51);
-            startButton.FlatAppearance.BorderSize = 2;
-            startButton.FlatStyle = FlatStyle.Flat;
-            startButton.Font = new Font("Century Gothic", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
-            startButton.ForeColor = Color.White;
-            startButton.Location = new Point(352, 46);
-            startButton.Name = "startButton";
-            startButton.Size = new Size(129, 30);
-            startButton.TabIndex = 1;
-            startButton.Text = "START (F7)";
-            startButton.UseVisualStyleBackColor = true;
-            startButton.Click += startButton_Click;
-            // 
-            // stopButton
-            // 
-            stopButton.FlatAppearance.BorderColor = Color.FromArgb(27, 8, 51);
-            stopButton.FlatAppearance.BorderSize = 2;
-            stopButton.FlatStyle = FlatStyle.Flat;
-            stopButton.Font = new Font("Century Gothic", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
-            stopButton.ForeColor = Color.White;
-            stopButton.Location = new Point(352, 84);
-            stopButton.Name = "stopButton";
-            stopButton.Size = new Size(129, 30);
-            stopButton.TabIndex = 2;
-            stopButton.Text = "STOP (F8)";
-            stopButton.UseVisualStyleBackColor = true;
-            stopButton.Click += stopButton_Click;
             // 
             // versionLabel
             // 
@@ -114,17 +58,6 @@
             versionLabel.Size = new Size(43, 13);
             versionLabel.TabIndex = 3;
             versionLabel.Text = "v2.0.0-b";
-            // 
-            // millisecondLabel
-            // 
-            millisecondLabel.AutoSize = true;
-            millisecondLabel.Font = new Font("Century Gothic", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            millisecondLabel.ForeColor = Color.White;
-            millisecondLabel.Location = new Point(167, 43);
-            millisecondLabel.Name = "millisecondLabel";
-            millisecondLabel.Size = new Size(88, 16);
-            millisecondLabel.TabIndex = 1;
-            millisecondLabel.Text = "Milliseconds";
             // 
             // topBorder
             // 
@@ -163,18 +96,6 @@
             closeButton.UseVisualStyleBackColor = true;
             closeButton.Click += closeButton_Click;
             // 
-            // noValueLabel
-            // 
-            noValueLabel.AutoSize = true;
-            noValueLabel.Font = new Font("Century Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            noValueLabel.ForeColor = Color.FromArgb(177, 14, 18);
-            noValueLabel.Location = new Point(168, 84);
-            noValueLabel.Name = "noValueLabel";
-            noValueLabel.Size = new Size(169, 16);
-            noValueLabel.TabIndex = 8;
-            noValueLabel.Text = "Enter a value greater than 0!";
-            noValueLabel.Visible = false;
-            // 
             // panelSidebar
             // 
             panelSidebar.BackColor = Color.FromArgb(27, 8, 51);
@@ -209,6 +130,7 @@
             aboutTab.Size = new Size(159, 40);
             aboutTab.TabIndex = 2;
             aboutTab.Text = "About";
+            aboutTab.Click += aboutTab_Click;
             // 
             // guna2Button2
             // 
@@ -256,85 +178,15 @@
             homeTab.Size = new Size(159, 40);
             homeTab.TabIndex = 0;
             homeTab.Text = "Home";
+            homeTab.Click += homeTab_Click;
             // 
-            // leftMouseButton
+            // mainPanel
             // 
-            leftMouseButton.Checked = true;
-            leftMouseButton.CheckedState.BorderColor = Color.FromArgb(66, 16, 130);
-            leftMouseButton.CheckedState.BorderThickness = 0;
-            leftMouseButton.CheckedState.FillColor = Color.FromArgb(96, 32, 176);
-            leftMouseButton.CheckedState.InnerColor = Color.FromArgb(178, 120, 250);
-            leftMouseButton.Location = new Point(165, 90);
-            leftMouseButton.Name = "leftMouseButton";
-            leftMouseButton.ShadowDecoration.CustomizableEdges = customizableEdges7;
-            leftMouseButton.Size = new Size(15, 15);
-            leftMouseButton.TabIndex = 10;
-            leftMouseButton.Text = "Some text";
-            leftMouseButton.UncheckedState.BorderColor = Color.DarkGray;
-            leftMouseButton.UncheckedState.BorderThickness = 1;
-            leftMouseButton.UncheckedState.FillColor = Color.Transparent;
-            leftMouseButton.UncheckedState.InnerColor = Color.Transparent;
-            // 
-            // labelLMB
-            // 
-            labelLMB.AutoSize = true;
-            labelLMB.Font = new Font("Century Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            labelLMB.ForeColor = Color.White;
-            labelLMB.Location = new Point(181, 89);
-            labelLMB.Name = "labelLMB";
-            labelLMB.Size = new Size(68, 16);
-            labelLMB.TabIndex = 11;
-            labelLMB.Text = "Left Mouse";
-            // 
-            // labelRMB
-            // 
-            labelRMB.AutoSize = true;
-            labelRMB.Font = new Font("Century Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            labelRMB.ForeColor = Color.White;
-            labelRMB.Location = new Point(268, 89);
-            labelRMB.Name = "labelRMB";
-            labelRMB.Size = new Size(77, 16);
-            labelRMB.TabIndex = 13;
-            labelRMB.Text = "Right Mouse";
-            // 
-            // rightMouseButton
-            // 
-            rightMouseButton.CheckedState.BorderColor = Color.FromArgb(66, 16, 130);
-            rightMouseButton.CheckedState.BorderThickness = 0;
-            rightMouseButton.CheckedState.FillColor = Color.FromArgb(96, 32, 176);
-            rightMouseButton.CheckedState.InnerColor = Color.FromArgb(178, 120, 250);
-            rightMouseButton.Location = new Point(252, 90);
-            rightMouseButton.Name = "rightMouseButton";
-            rightMouseButton.ShadowDecoration.CustomizableEdges = customizableEdges8;
-            rightMouseButton.Size = new Size(15, 15);
-            rightMouseButton.TabIndex = 12;
-            rightMouseButton.Text = "Some text";
-            rightMouseButton.UncheckedState.BorderColor = Color.DarkGray;
-            rightMouseButton.UncheckedState.BorderThickness = 1;
-            rightMouseButton.UncheckedState.FillColor = Color.Transparent;
-            rightMouseButton.UncheckedState.InnerColor = Color.Transparent;
-            // 
-            // homeStatusLabel
-            // 
-            homeStatusLabel.AutoSize = true;
-            homeStatusLabel.Font = new Font("Century Gothic", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            homeStatusLabel.ForeColor = Color.White;
-            homeStatusLabel.Location = new Point(165, 212);
-            homeStatusLabel.Name = "homeStatusLabel";
-            homeStatusLabel.Size = new Size(55, 16);
-            homeStatusLabel.TabIndex = 14;
-            homeStatusLabel.Text = "STATUS:";
-            // 
-            // homeStatus
-            // 
-            homeStatus.AutoSize = true;
-            homeStatus.Font = new Font("Century Gothic", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            homeStatus.ForeColor = Color.FromArgb(177, 14, 18);
-            homeStatus.Location = new Point(216, 212);
-            homeStatus.Name = "homeStatus";
-            homeStatus.Size = new Size(61, 16);
-            homeStatus.TabIndex = 15;
-            homeStatus.Text = "STOPPED";
+            mainPanel.BackColor = Color.FromArgb(40, 9, 79);
+            mainPanel.Location = new Point(158, 30);
+            mainPanel.Name = "mainPanel";
+            mainPanel.Size = new Size(332, 200);
+            mainPanel.TabIndex = 16;
             // 
             // Autoclick
             // 
@@ -342,20 +194,10 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(40, 9, 79);
             ClientSize = new Size(490, 230);
-            Controls.Add(homeStatusLabel);
-            Controls.Add(homeStatus);
-            Controls.Add(labelRMB);
-            Controls.Add(rightMouseButton);
-            Controls.Add(labelLMB);
-            Controls.Add(leftMouseButton);
             Controls.Add(panelSidebar);
-            Controls.Add(noValueLabel);
             Controls.Add(topBorder);
-            Controls.Add(milliText);
-            Controls.Add(millisecondLabel);
             Controls.Add(versionLabel);
-            Controls.Add(stopButton);
-            Controls.Add(startButton);
+            Controls.Add(mainPanel);
             ForeColor = Color.Black;
             FormBorderStyle = FormBorderStyle.None;
             Icon = (Icon)resources.GetObject("$this.Icon");
@@ -370,25 +212,14 @@
         }
 
         #endregion
-
-        private TextBox milliText;
-        private Button startButton;
-        private Button stopButton;
         private Label versionLabel;
-        private Label millisecondLabel;
         private Panel topBorder;
         private Button closeButton;
         private Label titleLabel;
-        private Label noValueLabel;
         private Panel panelSidebar;
         private Guna.UI2.WinForms.Guna2Button homeTab;
         private Guna.UI2.WinForms.Guna2Button aboutTab;
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
-        private Guna.UI2.WinForms.Guna2CustomRadioButton leftMouseButton;
-        private Label labelLMB;
-        private Label labelRMB;
-        private Guna.UI2.WinForms.Guna2CustomRadioButton rightMouseButton;
-        private Label homeStatusLabel;
-        private Label homeStatus;
+        private Panel mainPanel;
     }
 }
