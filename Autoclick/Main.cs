@@ -34,6 +34,11 @@ namespace Autoclick
 
                 // Hide label after value is added
                 noValueLabel.Visible = false;
+                // Move radio buttons back to original location
+                leftMouseButton.Location = new Point(165, 86);
+                rightMouseButton.Location = new Point(252, 86);
+                labelLMB.Location = new Point(181, 85);
+                labelRMB.Location = new Point(268, 85);
                 // Change status
                 homeStatus.ForeColor = Color.FromArgb(13, 92, 25);
                 homeStatus.Text = "RUNNING...";
@@ -42,6 +47,11 @@ namespace Autoclick
             {
                 // Show error label when there is no value
                 noValueLabel.Visible = true;
+                // Move radio buttons below error label
+                leftMouseButton.Location = new Point(165, 101);
+                rightMouseButton.Location = new Point(252, 101);
+                labelLMB.Location = new Point(181, 100);
+                labelRMB.Location = new Point(268, 100);
             }
         }
         // Stop auto-clicking

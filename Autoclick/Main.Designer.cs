@@ -170,9 +170,9 @@
             noValueLabel.ForeColor = Color.FromArgb(177, 14, 18);
             noValueLabel.Location = new Point(168, 80);
             noValueLabel.Name = "noValueLabel";
-            noValueLabel.Size = new Size(85, 16);
+            noValueLabel.Size = new Size(169, 16);
             noValueLabel.TabIndex = 8;
-            noValueLabel.Text = "Enter a value!";
+            noValueLabel.Text = "Enter a value greater than 0!";
             noValueLabel.Visible = false;
             // 
             // panelSidebar
@@ -264,7 +264,7 @@
             leftMouseButton.CheckedState.BorderThickness = 0;
             leftMouseButton.CheckedState.FillColor = Color.FromArgb(96, 32, 176);
             leftMouseButton.CheckedState.InnerColor = Color.FromArgb(178, 120, 250);
-            leftMouseButton.Location = new Point(165, 101);
+            leftMouseButton.Location = new Point(165, 86);
             leftMouseButton.Name = "leftMouseButton";
             leftMouseButton.ShadowDecoration.CustomizableEdges = customizableEdges7;
             leftMouseButton.Size = new Size(15, 15);
@@ -280,7 +280,7 @@
             labelLMB.AutoSize = true;
             labelLMB.Font = new Font("Century Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point);
             labelLMB.ForeColor = Color.White;
-            labelLMB.Location = new Point(181, 100);
+            labelLMB.Location = new Point(181, 85);
             labelLMB.Name = "labelLMB";
             labelLMB.Size = new Size(68, 16);
             labelLMB.TabIndex = 11;
@@ -291,7 +291,7 @@
             labelRMB.AutoSize = true;
             labelRMB.Font = new Font("Century Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point);
             labelRMB.ForeColor = Color.White;
-            labelRMB.Location = new Point(268, 100);
+            labelRMB.Location = new Point(268, 85);
             labelRMB.Name = "labelRMB";
             labelRMB.Size = new Size(77, 16);
             labelRMB.TabIndex = 13;
@@ -303,7 +303,7 @@
             rightMouseButton.CheckedState.BorderThickness = 0;
             rightMouseButton.CheckedState.FillColor = Color.FromArgb(96, 32, 176);
             rightMouseButton.CheckedState.InnerColor = Color.FromArgb(178, 120, 250);
-            rightMouseButton.Location = new Point(252, 101);
+            rightMouseButton.Location = new Point(252, 86);
             rightMouseButton.Name = "rightMouseButton";
             rightMouseButton.ShadowDecoration.CustomizableEdges = customizableEdges8;
             rightMouseButton.Size = new Size(15, 15);
