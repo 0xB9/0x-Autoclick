@@ -42,10 +42,10 @@ namespace Autoclick.Tabs
                 noValueLabel.Visible = false;
 
                 // Move radio buttons back to original location
-                leftMouseButton.Location = new Point(165, 90);
-                rightMouseButton.Location = new Point(252, 90);
-                labelLMB.Location = new Point(181, 89);
-                labelRMB.Location = new Point(268, 89);
+                leftMouseButton.Location = new Point(8, 55);
+                rightMouseButton.Location = new Point(95, 55);
+                labelLMB.Location = new Point(24, 54);
+                labelRMB.Location = new Point(111, 54);
 
                 // Change status
                 homeStatus.ForeColor = Color.FromArgb(13, 92, 25);
@@ -57,10 +57,10 @@ namespace Autoclick.Tabs
                 noValueLabel.Visible = true;
 
                 // Move radio buttons below error label
-                leftMouseButton.Location = new Point(165, 104);
-                rightMouseButton.Location = new Point(252, 104);
-                labelLMB.Location = new Point(181, 103);
-                labelRMB.Location = new Point(268, 103);
+                leftMouseButton.Location = new Point(8, 67);
+                rightMouseButton.Location = new Point(95, 67);
+                labelLMB.Location = new Point(24, 66);
+                labelRMB.Location = new Point(111, 66);
             }
         }
 
