@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             howToLabel = new Label();
             checkUpdateButton = new Guna.UI2.WinForms.Guna2Button();
             howToLink = new LinkLabel();
@@ -49,7 +49,7 @@
             // 
             checkUpdateButton.BackColor = Color.FromArgb(66, 16, 130);
             checkUpdateButton.CheckedState.FillColor = Color.FromArgb(66, 16, 130);
-            checkUpdateButton.CustomizableEdges = customizableEdges5;
+            checkUpdateButton.CustomizableEdges = customizableEdges1;
             checkUpdateButton.DisabledState.BorderColor = Color.DarkGray;
             checkUpdateButton.DisabledState.CustomBorderColor = Color.DarkGray;
             checkUpdateButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -61,13 +61,14 @@
             checkUpdateButton.Location = new Point(104, 152);
             checkUpdateButton.Name = "checkUpdateButton";
             checkUpdateButton.PressedColor = Color.FromArgb(66, 16, 130);
-            checkUpdateButton.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            checkUpdateButton.ShadowDecoration.CustomizableEdges = customizableEdges2;
             checkUpdateButton.Size = new Size(150, 40);
             checkUpdateButton.TabIndex = 1;
             checkUpdateButton.Text = "Check for Update";
             // 
             // howToLink
             // 
+            howToLink.ActiveLinkColor = Color.Teal;
             howToLink.AutoSize = true;
             howToLink.LinkBehavior = LinkBehavior.NeverUnderline;
             howToLink.LinkColor = Color.FromArgb(0, 192, 192);
