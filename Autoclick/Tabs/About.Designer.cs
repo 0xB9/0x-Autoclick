@@ -28,27 +28,28 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            label1 = new Label();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            howToLabel = new Label();
             checkUpdateButton = new Guna.UI2.WinForms.Guna2Button();
+            howToLink = new LinkLabel();
             SuspendLayout();
             // 
-            // label1
+            // howToLabel
             // 
-            label1.AutoSize = true;
-            label1.ForeColor = Color.White;
-            label1.Location = new Point(155, 90);
-            label1.Name = "label1";
-            label1.Size = new Size(46, 16);
-            label1.TabIndex = 0;
-            label1.Text = "About";
+            howToLabel.AutoSize = true;
+            howToLabel.ForeColor = Color.White;
+            howToLabel.Location = new Point(9, 11);
+            howToLabel.Name = "howToLabel";
+            howToLabel.Size = new Size(80, 16);
+            howToLabel.TabIndex = 0;
+            howToLabel.Text = "How to use:";
             // 
             // checkUpdateButton
             // 
             checkUpdateButton.BackColor = Color.FromArgb(66, 16, 130);
             checkUpdateButton.CheckedState.FillColor = Color.FromArgb(66, 16, 130);
-            checkUpdateButton.CustomizableEdges = customizableEdges1;
+            checkUpdateButton.CustomizableEdges = customizableEdges5;
             checkUpdateButton.DisabledState.BorderColor = Color.DarkGray;
             checkUpdateButton.DisabledState.CustomBorderColor = Color.DarkGray;
             checkUpdateButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -60,18 +61,32 @@
             checkUpdateButton.Location = new Point(104, 152);
             checkUpdateButton.Name = "checkUpdateButton";
             checkUpdateButton.PressedColor = Color.FromArgb(66, 16, 130);
-            checkUpdateButton.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            checkUpdateButton.ShadowDecoration.CustomizableEdges = customizableEdges6;
             checkUpdateButton.Size = new Size(150, 40);
             checkUpdateButton.TabIndex = 1;
             checkUpdateButton.Text = "Check for Update";
+            // 
+            // howToLink
+            // 
+            howToLink.AutoSize = true;
+            howToLink.LinkBehavior = LinkBehavior.NeverUnderline;
+            howToLink.LinkColor = Color.FromArgb(0, 192, 192);
+            howToLink.Location = new Point(88, 11);
+            howToLink.Name = "howToLink";
+            howToLink.Size = new Size(95, 16);
+            howToLink.TabIndex = 2;
+            howToLink.TabStop = true;
+            howToLink.Text = "View README";
+            howToLink.LinkClicked += howToLink_LinkClicked;
             // 
             // About
             // 
             AutoScaleDimensions = new SizeF(8F, 16F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(40, 9, 79);
+            Controls.Add(howToLink);
             Controls.Add(checkUpdateButton);
-            Controls.Add(label1);
+            Controls.Add(howToLabel);
             Font = new Font("Century Gothic", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             Name = "About";
             Size = new Size(379, 213);
@@ -81,7 +96,8 @@
 
         #endregion
 
-        private Label label1;
+        private Label howToLabel;
         private Guna.UI2.WinForms.Guna2Button checkUpdateButton;
+        private LinkLabel howToLink;
     }
 }

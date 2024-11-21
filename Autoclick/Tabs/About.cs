@@ -16,5 +16,21 @@ namespace Autoclick.Tabs
         {
             InitializeComponent();
         }
+
+        private void howToLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            try
+            {
+                System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo
+                {
+                    FileName = "https://github.com/0xB9/Autoclick",
+                    UseShellExecute = true // Ensures URL is opened in default browser
+                });
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"An error occurred: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 }
