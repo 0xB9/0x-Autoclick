@@ -53,11 +53,11 @@
             versionLabel.AutoSize = true;
             versionLabel.Font = new Font("Century Gothic", 6.75F, FontStyle.Bold, GraphicsUnit.Point);
             versionLabel.ForeColor = Color.White;
-            versionLabel.Location = new Point(445, 215);
+            versionLabel.Location = new Point(454, 215);
             versionLabel.Name = "versionLabel";
-            versionLabel.Size = new Size(43, 13);
+            versionLabel.Size = new Size(33, 13);
             versionLabel.TabIndex = 3;
-            versionLabel.Text = "v2.0.0-b";
+            versionLabel.Text = "v2.0.0";
             // 
             // topBorder
             // 
