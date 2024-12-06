@@ -37,6 +37,10 @@
             howToLink = new LinkLabel();
             updateLabel = new Label();
             downloadButton = new Guna.UI2.WinForms.Guna2Button();
+            openGithubLabel = new LinkLabel();
+            sourceCodeLabel = new Label();
+            reportLabel = new LinkLabel();
+            feedbackLabel = new Label();
             SuspendLayout();
             // 
             // howToLabel
@@ -119,16 +123,68 @@
             downloadButton.Visible = false;
             downloadButton.Click += downloadButton_Click;
             // 
+            // openGithubLabel
+            // 
+            openGithubLabel.ActiveLinkColor = Color.Teal;
+            openGithubLabel.AutoSize = true;
+            openGithubLabel.LinkBehavior = LinkBehavior.NeverUnderline;
+            openGithubLabel.LinkColor = Color.FromArgb(0, 192, 192);
+            openGithubLabel.Location = new Point(99, 30);
+            openGithubLabel.Name = "openGithubLabel";
+            openGithubLabel.Size = new Size(86, 16);
+            openGithubLabel.TabIndex = 6;
+            openGithubLabel.TabStop = true;
+            openGithubLabel.Text = "View Github";
+            openGithubLabel.LinkClicked += openGithubLabel_LinkClicked;
+            // 
+            // sourceCodeLabel
+            // 
+            sourceCodeLabel.AutoSize = true;
+            sourceCodeLabel.ForeColor = Color.White;
+            sourceCodeLabel.Location = new Point(9, 30);
+            sourceCodeLabel.Name = "sourceCodeLabel";
+            sourceCodeLabel.Size = new Size(92, 16);
+            sourceCodeLabel.TabIndex = 5;
+            sourceCodeLabel.Text = "Source code:";
+            // 
+            // reportLabel
+            // 
+            reportLabel.ActiveLinkColor = Color.Teal;
+            reportLabel.AutoSize = true;
+            reportLabel.LinkBehavior = LinkBehavior.NeverUnderline;
+            reportLabel.LinkColor = Color.FromArgb(0, 192, 192);
+            reportLabel.Location = new Point(122, 49);
+            reportLabel.Name = "reportLabel";
+            reportLabel.Size = new Size(94, 16);
+            reportLabel.TabIndex = 8;
+            reportLabel.TabStop = true;
+            reportLabel.Text = "Create report";
+            reportLabel.LinkClicked += reportLabel_LinkClicked;
+            // 
+            // feedbackLabel
+            // 
+            feedbackLabel.AutoSize = true;
+            feedbackLabel.ForeColor = Color.White;
+            feedbackLabel.Location = new Point(9, 49);
+            feedbackLabel.Name = "feedbackLabel";
+            feedbackLabel.Size = new Size(115, 16);
+            feedbackLabel.TabIndex = 7;
+            feedbackLabel.Text = "Share feedback:";
+            // 
             // About
             // 
             AutoScaleDimensions = new SizeF(8F, 16F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(40, 9, 79);
+            Controls.Add(howToLabel);
+            Controls.Add(feedbackLabel);
+            Controls.Add(sourceCodeLabel);
+            Controls.Add(reportLabel);
+            Controls.Add(openGithubLabel);
             Controls.Add(downloadButton);
             Controls.Add(updateLabel);
             Controls.Add(howToLink);
             Controls.Add(checkUpdateButton);
-            Controls.Add(howToLabel);
             Font = new Font("Century Gothic", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             Name = "About";
             Size = new Size(379, 213);
@@ -143,5 +199,9 @@
         private LinkLabel howToLink;
         private Label updateLabel;
         private Guna.UI2.WinForms.Guna2Button downloadButton;
+        private LinkLabel openGithubLabel;
+        private Label sourceCodeLabel;
+        private LinkLabel reportLabel;
+        private Label feedbackLabel;
     }
 }

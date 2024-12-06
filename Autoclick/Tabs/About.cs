@@ -39,6 +39,36 @@ namespace Autoclick.Tabs
                 MessageBox.Show($"An error occurred: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+        private void openGithubLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            try
+            {
+                System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo
+                {
+                    FileName = "https://github.com/0xB9/Autoclick",
+                    UseShellExecute = true // Ensures URL is opened in default browser
+                });
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"An error occurred: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        private void reportLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            try
+            {
+                System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo
+                {
+                    FileName = "https://github.com/0xB9/Autoclick/issues",
+                    UseShellExecute = true // Ensures URL is opened in default browser
+                });
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"An error occurred: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
 
         private async void checkUpdateButton_Click(object sender, EventArgs e)
         {
@@ -86,10 +116,9 @@ namespace Autoclick.Tabs
                 MessageBox.Show($"An error occurred: {ex.Message} \n\nPlease create a bug report.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
         private async void downloadButton_Click(object sender, EventArgs e)
         {
-            
+
             string fileUrl = $"https://github.com/0xB9/Autoclick/releases/download/{latestVersion}/Autoclick-{latestVersion}.zip";
 
             using (SaveFileDialog saveFileDialog = new SaveFileDialog())
