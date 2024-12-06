@@ -65,6 +65,7 @@
             checkUpdateButton.Size = new Size(141, 30);
             checkUpdateButton.TabIndex = 1;
             checkUpdateButton.Text = "Check for Update";
+            checkUpdateButton.Click += checkUpdateButton_Click;
             // 
             // howToLink
             // 

@@ -5,8 +5,10 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.Json;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Net.Http;
 
 namespace Autoclick.Tabs
 {
@@ -31,6 +33,11 @@ namespace Autoclick.Tabs
             {
                 MessageBox.Show($"An error occurred: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void checkUpdateButton_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
