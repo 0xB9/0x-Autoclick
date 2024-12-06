@@ -58,11 +58,11 @@
             checkUpdateButton.Font = new Font("Century Gothic", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             checkUpdateButton.ForeColor = Color.White;
             checkUpdateButton.HoverState.FillColor = Color.FromArgb(27, 8, 51);
-            checkUpdateButton.Location = new Point(104, 152);
+            checkUpdateButton.Location = new Point(86, 161);
             checkUpdateButton.Name = "checkUpdateButton";
             checkUpdateButton.PressedColor = Color.FromArgb(66, 16, 130);
             checkUpdateButton.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            checkUpdateButton.Size = new Size(150, 40);
+            checkUpdateButton.Size = new Size(141, 30);
             checkUpdateButton.TabIndex = 1;
             checkUpdateButton.Text = "Check for Update";
             // 
