@@ -15,7 +15,7 @@ namespace Autoclick.Tabs
 {
     public partial class About : UserControl
     {
-        private string latestVersion;
+        private string? latestVersion;
         private const string currentVersion = "v2.0.0";
         private const string repoUrl = "https://api.github.com/repos/0xB9/0x-Autoclick/releases/latest";
 
