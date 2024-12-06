@@ -80,9 +80,9 @@
             titleLabel.ForeColor = Color.White;
             titleLabel.Location = new Point(4, 5);
             titleLabel.Name = "titleLabel";
-            titleLabel.Size = new Size(82, 19);
+            titleLabel.Size = new Size(104, 19);
             titleLabel.TabIndex = 1;
-            titleLabel.Text = "Autoclick";
+            titleLabel.Text = "0x Autoclick";
             // 
             // closeButton
             // 

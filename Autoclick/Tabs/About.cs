@@ -17,7 +17,7 @@ namespace Autoclick.Tabs
     {
         private string latestVersion;
         private const string currentVersion = "v2.0.0";
-        private const string repoUrl = "https://api.github.com/repos/0xB9/Autoclick/releases/latest";
+        private const string repoUrl = "https://api.github.com/repos/0xB9/0x-Autoclick/releases/latest";
 
         public About()
         {
@@ -30,7 +30,7 @@ namespace Autoclick.Tabs
             {
                 System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo
                 {
-                    FileName = "https://github.com/0xB9/Autoclick",
+                    FileName = "https://github.com/0xB9/0x-Autoclick",
                     UseShellExecute = true // Ensures URL is opened in default browser
                 });
             }
@@ -45,7 +45,7 @@ namespace Autoclick.Tabs
             {
                 System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo
                 {
-                    FileName = "https://github.com/0xB9/Autoclick",
+                    FileName = "https://github.com/0xB9/0x-Autoclick",
                     UseShellExecute = true // Ensures URL is opened in default browser
                 });
             }
@@ -60,7 +60,7 @@ namespace Autoclick.Tabs
             {
                 System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo
                 {
-                    FileName = "https://github.com/0xB9/Autoclick/issues",
+                    FileName = "https://github.com/0xB9/0x-Autoclick/issues",
                     UseShellExecute = true // Ensures URL is opened in default browser
                 });
             }
@@ -119,12 +119,12 @@ namespace Autoclick.Tabs
         private async void downloadButton_Click(object sender, EventArgs e)
         {
 
-            string fileUrl = $"https://github.com/0xB9/Autoclick/releases/download/{latestVersion}/Autoclick-{latestVersion}.zip";
+            string fileUrl = $"https://github.com/0xB9/0x-Autoclick/releases/download/{latestVersion}/0x-Autoclick-{latestVersion}.zip";
 
             using (SaveFileDialog saveFileDialog = new SaveFileDialog())
             {
                 saveFileDialog.Filter = "Zip Files (*.zip)|*.zip";
-                saveFileDialog.FileName = $"Autoclick-{latestVersion}.zip";
+                saveFileDialog.FileName = $"0x-Autoclick-{latestVersion}.zip";
 
                 if (saveFileDialog.ShowDialog() == DialogResult.OK)
                 {
