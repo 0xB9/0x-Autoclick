@@ -30,9 +30,13 @@
         {
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             howToLabel = new Label();
             checkUpdateButton = new Guna.UI2.WinForms.Guna2Button();
             howToLink = new LinkLabel();
+            updateLabel = new Label();
+            downloadButton = new Guna.UI2.WinForms.Guna2Button();
             SuspendLayout();
             // 
             // howToLabel
@@ -58,7 +62,7 @@
             checkUpdateButton.Font = new Font("Century Gothic", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             checkUpdateButton.ForeColor = Color.White;
             checkUpdateButton.HoverState.FillColor = Color.FromArgb(27, 8, 51);
-            checkUpdateButton.Location = new Point(86, 161);
+            checkUpdateButton.Location = new Point(11, 153);
             checkUpdateButton.Name = "checkUpdateButton";
             checkUpdateButton.PressedColor = Color.FromArgb(66, 16, 130);
             checkUpdateButton.ShadowDecoration.CustomizableEdges = customizableEdges2;
@@ -81,11 +85,47 @@
             howToLink.Text = "View README";
             howToLink.LinkClicked += howToLink_LinkClicked;
             // 
+            // updateLabel
+            // 
+            updateLabel.AutoSize = true;
+            updateLabel.ForeColor = Color.White;
+            updateLabel.Location = new Point(9, 130);
+            updateLabel.Name = "updateLabel";
+            updateLabel.Size = new Size(154, 16);
+            updateLabel.TabIndex = 3;
+            updateLabel.Text = "Checking for update...";
+            updateLabel.Visible = false;
+            // 
+            // downloadButton
+            // 
+            downloadButton.BackColor = Color.FromArgb(66, 16, 130);
+            downloadButton.CheckedState.FillColor = Color.FromArgb(66, 16, 130);
+            downloadButton.CustomizableEdges = customizableEdges3;
+            downloadButton.DisabledState.BorderColor = Color.DarkGray;
+            downloadButton.DisabledState.CustomBorderColor = Color.DarkGray;
+            downloadButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            downloadButton.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            downloadButton.FillColor = Color.FromArgb(66, 16, 130);
+            downloadButton.Font = new Font("Century Gothic", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            downloadButton.ForeColor = Color.White;
+            downloadButton.HoverState.FillColor = Color.FromArgb(27, 8, 51);
+            downloadButton.Location = new Point(168, 153);
+            downloadButton.Name = "downloadButton";
+            downloadButton.PressedColor = Color.FromArgb(66, 16, 130);
+            downloadButton.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            downloadButton.Size = new Size(140, 30);
+            downloadButton.TabIndex = 4;
+            downloadButton.Text = "Download v0.0.0";
+            downloadButton.Visible = false;
+            downloadButton.Click += downloadButton_Click;
+            // 
             // About
             // 
             AutoScaleDimensions = new SizeF(8F, 16F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(40, 9, 79);
+            Controls.Add(downloadButton);
+            Controls.Add(updateLabel);
             Controls.Add(howToLink);
             Controls.Add(checkUpdateButton);
             Controls.Add(howToLabel);
@@ -101,5 +141,7 @@
         private Label howToLabel;
         private Guna.UI2.WinForms.Guna2Button checkUpdateButton;
         private LinkLabel howToLink;
+        private Label updateLabel;
+        private Guna.UI2.WinForms.Guna2Button downloadButton;
     }
 }
