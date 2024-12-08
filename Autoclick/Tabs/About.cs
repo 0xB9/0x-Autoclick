@@ -139,7 +139,7 @@ namespace Autoclick.Tabs
                             // Save the file to the selected location
                             await File.WriteAllBytesAsync(savePath, fileBytes);
 
-                            MessageBox.Show($"Successfully downloaded!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            MessageBox.Show($"Download successful!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         }
                     }
                     catch (Exception ex)
