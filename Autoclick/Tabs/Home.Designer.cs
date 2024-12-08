@@ -28,8 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             homeStatusLabel = new Label();
             homeStatus = new Label();
             labelRMB = new Label();
@@ -37,10 +39,10 @@
             labelLMB = new Label();
             leftMouseButton = new Guna.UI2.WinForms.Guna2CustomRadioButton();
             noValueLabel = new Label();
-            milliText = new TextBox();
             millisecondLabel = new Label();
             stopButton = new Button();
             startButton = new Button();
+            milliText = new Guna.UI2.WinForms.Guna2TextBox();
             SuspendLayout();
             // 
             // homeStatusLabel
@@ -84,7 +86,7 @@
             rightMouseButton.CheckedState.InnerColor = Color.FromArgb(178, 120, 250);
             rightMouseButton.Location = new Point(95, 55);
             rightMouseButton.Name = "rightMouseButton";
-            rightMouseButton.ShadowDecoration.CustomizableEdges = customizableEdges5;
+            rightMouseButton.ShadowDecoration.CustomizableEdges = customizableEdges1;
             rightMouseButton.Size = new Size(15, 15);
             rightMouseButton.TabIndex = 23;
             rightMouseButton.Text = "Some text";
@@ -113,7 +115,7 @@
             leftMouseButton.CheckedState.InnerColor = Color.FromArgb(178, 120, 250);
             leftMouseButton.Location = new Point(8, 55);
             leftMouseButton.Name = "leftMouseButton";
-            leftMouseButton.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            leftMouseButton.ShadowDecoration.CustomizableEdges = customizableEdges2;
             leftMouseButton.Size = new Size(15, 15);
             leftMouseButton.TabIndex = 21;
             leftMouseButton.Text = "Some text";
@@ -133,19 +135,6 @@
             noValueLabel.TabIndex = 20;
             noValueLabel.Text = "Enter a value greater than 0!";
             noValueLabel.Visible = false;
-            // 
-            // milliText
-            // 
-            milliText.BackColor = Color.FromArgb(66, 16, 130);
-            milliText.BorderStyle = BorderStyle.None;
-            milliText.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            milliText.ForeColor = Color.White;
-            milliText.Location = new Point(10, 26);
-            milliText.Multiline = true;
-            milliText.Name = "milliText";
-            milliText.PlaceholderText = "3000";
-            milliText.Size = new Size(173, 21);
-            milliText.TabIndex = 18;
             // 
             // millisecondLabel
             // 
@@ -171,7 +160,7 @@
             stopButton.TabIndex = 19;
             stopButton.Text = "STOP (F8)";
             stopButton.UseVisualStyleBackColor = true;
-            stopButton.Click += new System.EventHandler(stopButton_Click);
+            stopButton.Click += stopButton_Click;
             // 
             // startButton
             // 
@@ -186,12 +175,39 @@
             startButton.TabIndex = 17;
             startButton.Text = "START (F7)";
             startButton.UseVisualStyleBackColor = true;
-            startButton.Click += new System.EventHandler(startButton_Click);
+            startButton.Click += startButton_Click;
+            // 
+            // milliText
+            // 
+            milliText.BorderColor = Color.FromArgb(143, 71, 233);
+            milliText.BorderRadius = 7;
+            milliText.CustomizableEdges = customizableEdges3;
+            milliText.DefaultText = "";
+            milliText.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            milliText.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            milliText.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            milliText.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            milliText.FillColor = Color.FromArgb(40, 9, 79);
+            milliText.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            milliText.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            milliText.ForeColor = Color.LightGray;
+            milliText.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            milliText.Location = new Point(10, 27);
+            milliText.Name = "milliText";
+            milliText.PasswordChar = '\0';
+            milliText.PlaceholderForeColor = Color.FromArgb(86, 86, 86);
+            milliText.PlaceholderText = "3000";
+            milliText.SelectedText = "";
+            milliText.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            milliText.Size = new Size(173, 21);
+            milliText.TabIndex = 27;
+            milliText.TextOffset = new Point(0, 1);
             // 
             // Home
             // 
             AutoScaleMode = AutoScaleMode.None;
             BackColor = Color.FromArgb(40, 9, 79);
+            Controls.Add(milliText);
             Controls.Add(homeStatusLabel);
             Controls.Add(homeStatus);
             Controls.Add(labelRMB);
@@ -199,7 +215,6 @@
             Controls.Add(labelLMB);
             Controls.Add(leftMouseButton);
             Controls.Add(noValueLabel);
-            Controls.Add(milliText);
             Controls.Add(millisecondLabel);
             Controls.Add(stopButton);
             Controls.Add(startButton);
@@ -218,9 +233,9 @@
         private Label labelLMB;
         private Guna.UI2.WinForms.Guna2CustomRadioButton leftMouseButton;
         private Label noValueLabel;
-        private TextBox milliText;
         private Label millisecondLabel;
         private Button stopButton;
         private Button startButton;
+        private Guna.UI2.WinForms.Guna2TextBox milliText;
     }
 }
