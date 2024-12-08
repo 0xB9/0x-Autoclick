@@ -154,6 +154,7 @@
             guna2Button2.Size = new Size(159, 40);
             guna2Button2.TabIndex = 1;
             guna2Button2.Text = "Tab 2";
+            guna2Button2.Visible = false;
             // 
             // homeTab
             // 
