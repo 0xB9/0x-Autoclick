@@ -136,9 +136,10 @@ namespace Autoclick.Tabs
                         {
                             // Download the file as a byte array
                             byte[] fileBytes = await client.GetByteArrayAsync(fileUrl);
-
                             // Save the file to the selected location
                             await File.WriteAllBytesAsync(savePath, fileBytes);
+
+                            MessageBox.Show($"Successfully downloaded!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         }
                     }
                     catch (Exception ex)
