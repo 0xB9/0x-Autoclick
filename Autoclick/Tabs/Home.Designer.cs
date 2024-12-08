@@ -32,6 +32,10 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             homeStatusLabel = new Label();
             homeStatus = new Label();
             labelRMB = new Label();
@@ -40,9 +44,9 @@
             leftMouseButton = new Guna.UI2.WinForms.Guna2CustomRadioButton();
             noValueLabel = new Label();
             millisecondLabel = new Label();
-            stopButton = new Button();
-            startButton = new Button();
             milliText = new Guna.UI2.WinForms.Guna2TextBox();
+            startButton = new Guna.UI2.WinForms.Guna2Button();
+            stopButton = new Guna.UI2.WinForms.Guna2Button();
             SuspendLayout();
             // 
             // homeStatusLabel
@@ -147,36 +151,6 @@
             millisecondLabel.TabIndex = 16;
             millisecondLabel.Text = "Milliseconds";
             // 
-            // stopButton
-            // 
-            stopButton.FlatAppearance.BorderColor = Color.FromArgb(27, 8, 51);
-            stopButton.FlatAppearance.BorderSize = 2;
-            stopButton.FlatStyle = FlatStyle.Flat;
-            stopButton.Font = new Font("Century Gothic", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
-            stopButton.ForeColor = Color.White;
-            stopButton.Location = new Point(195, 49);
-            stopButton.Name = "stopButton";
-            stopButton.Size = new Size(129, 30);
-            stopButton.TabIndex = 19;
-            stopButton.Text = "STOP (F8)";
-            stopButton.UseVisualStyleBackColor = true;
-            stopButton.Click += stopButton_Click;
-            // 
-            // startButton
-            // 
-            startButton.FlatAppearance.BorderColor = Color.FromArgb(27, 8, 51);
-            startButton.FlatAppearance.BorderSize = 2;
-            startButton.FlatStyle = FlatStyle.Flat;
-            startButton.Font = new Font("Century Gothic", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
-            startButton.ForeColor = Color.White;
-            startButton.Location = new Point(195, 11);
-            startButton.Name = "startButton";
-            startButton.Size = new Size(129, 30);
-            startButton.TabIndex = 17;
-            startButton.Text = "START (F7)";
-            startButton.UseVisualStyleBackColor = true;
-            startButton.Click += startButton_Click;
-            // 
             // milliText
             // 
             milliText.BorderColor = Color.FromArgb(143, 71, 233);
@@ -203,10 +177,58 @@
             milliText.TabIndex = 27;
             milliText.TextOffset = new Point(0, 1);
             // 
+            // startButton
+            // 
+            startButton.BorderColor = Color.FromArgb(143, 71, 233);
+            startButton.BorderRadius = 7;
+            startButton.BorderThickness = 1;
+            startButton.CustomizableEdges = customizableEdges5;
+            startButton.DisabledState.BorderColor = Color.DarkGray;
+            startButton.DisabledState.CustomBorderColor = Color.DarkGray;
+            startButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            startButton.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            startButton.FillColor = Color.FromArgb(40, 9, 79);
+            startButton.Font = new Font("Century Gothic", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            startButton.ForeColor = Color.White;
+            startButton.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            startButton.HoverState.FillColor = Color.FromArgb(40, 9, 79);
+            startButton.Location = new Point(195, 13);
+            startButton.Name = "startButton";
+            startButton.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            startButton.Size = new Size(129, 30);
+            startButton.TabIndex = 28;
+            startButton.Text = "START (F7)";
+            startButton.Click += startButton_Click;
+            // 
+            // stopButton
+            // 
+            stopButton.BorderColor = Color.FromArgb(143, 71, 233);
+            stopButton.BorderRadius = 7;
+            stopButton.BorderThickness = 1;
+            stopButton.CustomizableEdges = customizableEdges7;
+            stopButton.DisabledState.BorderColor = Color.DarkGray;
+            stopButton.DisabledState.CustomBorderColor = Color.DarkGray;
+            stopButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            stopButton.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            stopButton.FillColor = Color.FromArgb(40, 9, 79);
+            stopButton.Font = new Font("Century Gothic", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            stopButton.ForeColor = Color.White;
+            stopButton.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            stopButton.HoverState.FillColor = Color.FromArgb(40, 9, 79);
+            stopButton.Location = new Point(195, 49);
+            stopButton.Name = "stopButton";
+            stopButton.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            stopButton.Size = new Size(129, 30);
+            stopButton.TabIndex = 29;
+            stopButton.Text = "STOP (F8)";
+            stopButton.Click += stopButton_Click;
+            // 
             // Home
             // 
             AutoScaleMode = AutoScaleMode.None;
             BackColor = Color.FromArgb(40, 9, 79);
+            Controls.Add(stopButton);
+            Controls.Add(startButton);
             Controls.Add(milliText);
             Controls.Add(homeStatusLabel);
             Controls.Add(homeStatus);
@@ -216,8 +238,6 @@
             Controls.Add(leftMouseButton);
             Controls.Add(noValueLabel);
             Controls.Add(millisecondLabel);
-            Controls.Add(stopButton);
-            Controls.Add(startButton);
             Name = "Home";
             Size = new Size(332, 200);
             ResumeLayout(false);
@@ -234,8 +254,8 @@
         private Guna.UI2.WinForms.Guna2CustomRadioButton leftMouseButton;
         private Label noValueLabel;
         private Label millisecondLabel;
-        private Button stopButton;
-        private Button startButton;
         private Guna.UI2.WinForms.Guna2TextBox milliText;
+        private Guna.UI2.WinForms.Guna2Button startButton;
+        private Guna.UI2.WinForms.Guna2Button stopButton;
     }
 }
