@@ -30,7 +30,7 @@ namespace Autoclick.Tabs
             {
                 System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo
                 {
-                    FileName = "https://github.com/0xB9/0x-Autoclick",
+                    FileName = "https://github.com/0xB9/0x-Autoclick?tab=readme-ov-file#how-to-use",
                     UseShellExecute = true // Ensures URL is opened in default browser
                 });
             }
