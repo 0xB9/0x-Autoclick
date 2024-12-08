@@ -90,7 +90,7 @@
             rightMouseButton.Size = new Size(15, 15);
             rightMouseButton.TabIndex = 23;
             rightMouseButton.Text = "Some text";
-            rightMouseButton.UncheckedState.BorderColor = Color.DarkGray;
+            rightMouseButton.UncheckedState.BorderColor = Color.FromArgb(143, 71, 233);
             rightMouseButton.UncheckedState.BorderThickness = 1;
             rightMouseButton.UncheckedState.FillColor = Color.Transparent;
             rightMouseButton.UncheckedState.InnerColor = Color.Transparent;
@@ -119,7 +119,7 @@
             leftMouseButton.Size = new Size(15, 15);
             leftMouseButton.TabIndex = 21;
             leftMouseButton.Text = "Some text";
-            leftMouseButton.UncheckedState.BorderColor = Color.DarkGray;
+            leftMouseButton.UncheckedState.BorderColor = Color.FromArgb(143, 71, 233);
             leftMouseButton.UncheckedState.BorderThickness = 1;
             leftMouseButton.UncheckedState.FillColor = Color.Transparent;
             leftMouseButton.UncheckedState.InnerColor = Color.Transparent;
