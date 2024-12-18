@@ -13,4 +13,8 @@
     <Content Include="purple-cursor.ico" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Guna.UI2.WinForms" Version="2.0.4.6" />
+  </ItemGroup>
+
 </Project>
