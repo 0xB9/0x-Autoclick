@@ -36,7 +36,7 @@ namespace Autoclick.Tabs
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"An error occurred: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show($"An error occurred: {ex.Message} \n\nVersion: {currentVersion} \n\nPlease create a bug report with a screenshot of this error at github.com/0xB9/0x-Autoclick/issues", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
         private void openGithubLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -51,7 +51,7 @@ namespace Autoclick.Tabs
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"An error occurred: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show($"An error occurred: {ex.Message} \n\nVersion: {currentVersion} \n\nPlease create a bug report with a screenshot of this error at github.com/0xB9/0x-Autoclick/issues", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
         private void reportLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -66,7 +66,7 @@ namespace Autoclick.Tabs
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"An error occurred: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show($"An error occurred: {ex.Message} \n\nVersion: {currentVersion} \n\nPlease create a bug report with a screenshot of this error at github.com/0xB9/0x-Autoclick/issues", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -113,7 +113,7 @@ namespace Autoclick.Tabs
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"An error occurred: {ex.Message} \n\nPlease create a bug report.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show($"An error occurred: {ex.Message} \n\nVersion: {currentVersion} \n\nPlease create a bug report with a screenshot of this error at github.com/0xB9/0x-Autoclick/issues", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
         private async void downloadButton_Click(object sender, EventArgs e)
@@ -144,7 +144,7 @@ namespace Autoclick.Tabs
                     }
                     catch (Exception ex)
                     {
-                        MessageBox.Show($"An error occurred: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show($"An error occurred: {ex.Message} \n\nVersion: {currentVersion} \n\nPlease create a bug report with a screenshot of this error at github.com/0xB9/0x-Autoclick/issues", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
             }
