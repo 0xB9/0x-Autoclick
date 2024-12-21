@@ -37,10 +37,8 @@ namespace Autoclick.Tabs
             autoclickTimer = new System.Windows.Forms.Timer();
             autoclickTimer.Tick += new EventHandler(AutoClick);
 
-            this.ParentForm.FormClosing += ParentForm_FormClosing;
-
-            RegisterHotKey(this.Handle, HOTKEY_START, 0, (uint)Keys.F7);
-            RegisterHotKey(this.Handle, HOTKEY_STOP, 0, (uint)Keys.F8);
+            // Register hotkeys
+            this.Load += Home_Load;
         }
 
         // Start auto-clicking
@@ -88,6 +86,23 @@ namespace Autoclick.Tabs
             homeStatus.Text = "STOPPED";
         }
 
+        // Register hotkeys
+        private void Home_Load(object? sender, EventArgs e)
+        {
+            RegisterHotKey(this.Handle, HOTKEY_START, 0, (uint)Keys.F7);
+            RegisterHotKey(this.Handle, HOTKEY_STOP, 0, (uint)Keys.F8);
+        }
+
+        protected override void OnParentChanged(EventArgs e)
+        {
+            base.OnParentChanged(e);
+
+            if (this.ParentForm != null)
+            {
+                this.ParentForm.FormClosing += ParentForm_FormClosing;
+            }
+        }
+
         // Use F7/F8 keys to start/stop auto-clicking
         protected override void WndProc(ref Message m)
         {
@@ -109,10 +124,15 @@ namespace Autoclick.Tabs
         }
 
         // Unregister hotkeys
-        private void ParentForm_FormClosing(FormClosingEventArgs e)
+        private void ParentForm_FormClosing(object? sender, FormClosingEventArgs e)
         {
             UnregisterHotKey(this.Handle, HOTKEY_START);
             UnregisterHotKey(this.Handle, HOTKEY_STOP);
+
+            if (this.ParentForm != null)
+            {
+                this.ParentForm.FormClosing -= ParentForm_FormClosing;
+            }
         }
 
         private void AutoClick(object? sender, EventArgs e)
